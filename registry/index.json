@@ -11,14 +11,14 @@
       "region": "KR",
       "asset_classes": ["CRYPTO"],
       "description": "Upbit Official API — Real-time crypto trading",
-      "description_long": "한국 최대 암호화폐 거래소 Upbit의 공식 API 플러그인입니다. 실시간 시세 조회, 시장가/지정가 매매, 포트폴리오 조회, 전 종목 스캔을 지원하며 자동매매 엔진과 완전 호환됩니다. pyupbit 라이브러리 기반으로 안정적인 연동을 제공합니다.",
+      "description_long": "Official API plugin for Upbit, Korea's largest cryptocurrency exchange. Supports real-time price quotes, market/limit orders, portfolio tracking, and full symbol scanning. Fully compatible with the auto-trading engine. Built on the pyupbit library for stable and reliable integration.",
       "how_it_works": [
-        "Upbit 계정에서 API Key를 발급받습니다 (Open API 관리 페이지)",
-        "Store에서 API Key와 Secret Key를 입력합니다",
-        "Test Connection으로 연결을 확인합니다",
-        "활성화 후 챗봇 또는 자동매매 엔진으로 트레이딩을 시작합니다"
+        "Get your API Key from your Upbit account (Open API management page)",
+        "Enter your API Key and Secret Key in the Store",
+        "Verify the connection with Test Connection",
+        "Activate and start trading via chatbot or auto-trading engine"
       ],
-      "auth_note": "API Key는 Windows Credential Manager로 암호화 저장됩니다. 평문 저장 없음.",
+      "auth_note": "API Keys are encrypted and stored using Windows Credential Manager. Never stored in plain text.",
       "bundled": true,
       "download_url": null,
       "icon_url": null,
@@ -34,14 +34,14 @@
       "region": "US",
       "asset_classes": ["STOCK", "CRYPTO"],
       "description": "Alpaca Markets — US Stock & Crypto Trading",
-      "description_long": "미국 주식 및 암호화폐 트레이딩 플랫폼 Alpaca의 공식 플러그인입니다. S&P 500, NASDAQ, NYSE 등 8개 시장과 암호화폐를 지원합니다. Paper Trading(모의 투자) 모드로 안전하게 전략을 테스트할 수 있으며, WebSocket 실시간 시세와 분할 매수(Fractional Shares)를 지원합니다.",
+      "description_long": "Official plugin for Alpaca, a commission-free US stock and crypto trading platform. Supports 8 markets including S&P 500, NASDAQ, NYSE, and crypto. Test strategies safely with Paper Trading mode. Features WebSocket real-time quotes and fractional shares support.",
       "how_it_works": [
-        "Alpaca 계정 생성 후 API Key를 발급받습니다 (Paper/Live 선택)",
-        "Store에서 API Key와 Secret Key를 입력합니다",
-        "Test Connection으로 연결을 확인합니다",
-        "Strategy Editor에서 스캔할 시장을 선택한 후 자동매매를 시작합니다"
+        "Create an Alpaca account and get your API Key (Paper or Live)",
+        "Enter your API Key and Secret Key in the Store",
+        "Verify the connection with Test Connection",
+        "Select markets to scan in Strategy Editor and start auto-trading"
       ],
-      "auth_note": "Paper Trading 키가 기본 제공되어 실제 자금 없이 테스트 가능합니다. 키는 암호화 저장됩니다.",
+      "auth_note": "Paper Trading keys are provided by default for risk-free testing. Keys are encrypted and stored securely.",
       "bundled": true,
       "download_url": null,
       "icon_url": null,
@@ -57,13 +57,13 @@
       "region": "Test",
       "asset_classes": ["STOCK", "CRYPTO"],
       "description": "Mock Broker for testing — No real money",
-      "description_long": "개발 및 테스트 전용 가상 브로커입니다. 실제 거래소에 연결하지 않고 모의 데이터로 전략을 테스트할 수 있습니다. 기본 제공 테스트 키(mock_api_key / mock_secret_key)로 즉시 사용 가능합니다.",
+      "description_long": "A virtual broker for development and testing. Test your trading strategies with simulated data without connecting to a real exchange. Ready to use immediately with the built-in test keys (mock_api_key / mock_secret_key).",
       "how_it_works": [
-        "기본 테스트 키를 입력합니다: mock_api_key / mock_secret_key",
-        "활성화 후 MOCK-BTC, MOCK-ETH 등 가상 종목으로 테스트합니다",
-        "전략 개발 완료 후 실제 브로커로 전환합니다"
+        "Enter the default test keys: mock_api_key / mock_secret_key",
+        "Activate and test with virtual symbols like MOCK-BTC, MOCK-ETH",
+        "Switch to a real broker once your strategy is ready"
       ],
-      "auth_note": "테스트 전용입니다. 실제 자금이 사용되지 않습니다.",
+      "auth_note": "Test-only. No real funds are used.",
       "bundled": true,
       "download_url": null,
       "icon_url": null,
@@ -123,13 +123,13 @@
       "region": "GLOBAL",
       "asset_classes": [],
       "description": "DuckDuckGo-based real-time web search — No API key required",
-      "description_long": "DuckDuckGo 기반 실시간 웹 검색 플러그인입니다. API 키 없이 즉시 사용 가능하며, 챗봇을 통해 최신 뉴스, 시장 정보, 기업 정보 등을 실시간으로 검색할 수 있습니다. 프라이버시를 존중하는 DuckDuckGo 엔진을 사용합니다.",
+      "description_long": "Real-time web search plugin powered by DuckDuckGo. No API key required — works instantly. Search for the latest news, market data, and company information through the chatbot. Uses the privacy-respecting DuckDuckGo search engine.",
       "how_it_works": [
-        "별도 설정 없이 활성화합니다",
-        "챗봇에서 '검색해줘', 'search for...' 등으로 웹 검색을 요청합니다",
-        "검색 결과가 챗봇 응답에 포함됩니다"
+        "Activate with no additional setup required",
+        "Ask the chatbot to search — e.g., 'search for...', 'find latest news about...'",
+        "Search results are included directly in the chatbot response"
       ],
-      "auth_note": "API 키가 필요 없습니다. DuckDuckGo의 공개 검색 API를 사용합니다.",
+      "auth_note": "No API key required. Uses DuckDuckGo's public search API.",
       "bundled": true,
       "download_url": null,
       "icon_url": null,
