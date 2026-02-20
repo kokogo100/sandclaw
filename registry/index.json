@@ -21,7 +21,7 @@
       "auth_note": "API Key는 Windows Credential Manager로 암호화 저장됩니다. 평문 저장 없음.",
       "bundled": true,
       "download_url": null,
-      "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/registry/plugins/upbit/icon.png",
+      "icon_url": null,
       "min_core_version": "1.0.0",
       "capabilities_summary": ["search", "trading", "realtime"]
     },
@@ -44,7 +44,7 @@
       "auth_note": "Paper Trading 키가 기본 제공되어 실제 자금 없이 테스트 가능합니다. 키는 암호화 저장됩니다.",
       "bundled": true,
       "download_url": null,
-      "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/registry/plugins/alpaca/icon.png",
+      "icon_url": null,
       "min_core_version": "1.0.0",
       "capabilities_summary": ["search", "trading", "websocket", "paper_trading"]
     },
@@ -88,7 +88,7 @@
       "auth_note": "No credentials stored. Your login session stays in your browser. SandClaw never sees your password.",
       "bundled": true,
       "download_url": null,
-      "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/registry/plugins/kalshi/icon.png",
+      "icon_url": null,
       "min_core_version": "1.0.0",
       "capabilities_summary": ["search", "trading", "browser"]
     },
@@ -110,7 +110,7 @@
       "auth_note": "No credentials stored. Your login session stays in your browser. SandClaw never sees your password.",
       "bundled": true,
       "download_url": null,
-      "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/registry/plugins/robinhood/icon.png",
+      "icon_url": null,
       "min_core_version": "1.0.0",
       "capabilities_summary": ["search", "trading", "browser"]
     },
