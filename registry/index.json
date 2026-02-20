@@ -1,0 +1,140 @@
+{
+  "registry_version": "1.0.0",
+  "last_updated": "2026-02-20T00:00:00Z",
+  "plugins": [
+    {
+      "id": "upbit",
+      "name": "Upbit Official",
+      "version": "1.0.0",
+      "vendor": "SandClaw Team",
+      "plugin_type": "api",
+      "region": "KR",
+      "asset_classes": ["CRYPTO"],
+      "description": "Upbit Official API — Real-time crypto trading",
+      "description_long": "한국 최대 암호화폐 거래소 Upbit의 공식 API 플러그인입니다. 실시간 시세 조회, 시장가/지정가 매매, 포트폴리오 조회, 전 종목 스캔을 지원하며 자동매매 엔진과 완전 호환됩니다. pyupbit 라이브러리 기반으로 안정적인 연동을 제공합니다.",
+      "how_it_works": [
+        "Upbit 계정에서 API Key를 발급받습니다 (Open API 관리 페이지)",
+        "Store에서 API Key와 Secret Key를 입력합니다",
+        "Test Connection으로 연결을 확인합니다",
+        "활성화 후 챗봇 또는 자동매매 엔진으로 트레이딩을 시작합니다"
+      ],
+      "auth_note": "API Key는 Windows Credential Manager로 암호화 저장됩니다. 평문 저장 없음.",
+      "bundled": true,
+      "download_url": null,
+      "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/registry/plugins/upbit/icon.png",
+      "min_core_version": "1.0.0",
+      "capabilities_summary": ["search", "trading", "realtime"]
+    },
+    {
+      "id": "alpaca",
+      "name": "Alpaca Markets",
+      "version": "1.2.0",
+      "vendor": "SandClaw Team",
+      "plugin_type": "api",
+      "region": "US",
+      "asset_classes": ["STOCK", "CRYPTO"],
+      "description": "Alpaca Markets — US Stock & Crypto Trading",
+      "description_long": "미국 주식 및 암호화폐 트레이딩 플랫폼 Alpaca의 공식 플러그인입니다. S&P 500, NASDAQ, NYSE 등 8개 시장과 암호화폐를 지원합니다. Paper Trading(모의 투자) 모드로 안전하게 전략을 테스트할 수 있으며, WebSocket 실시간 시세와 분할 매수(Fractional Shares)를 지원합니다.",
+      "how_it_works": [
+        "Alpaca 계정 생성 후 API Key를 발급받습니다 (Paper/Live 선택)",
+        "Store에서 API Key와 Secret Key를 입력합니다",
+        "Test Connection으로 연결을 확인합니다",
+        "Strategy Editor에서 스캔할 시장을 선택한 후 자동매매를 시작합니다"
+      ],
+      "auth_note": "Paper Trading 키가 기본 제공되어 실제 자금 없이 테스트 가능합니다. 키는 암호화 저장됩니다.",
+      "bundled": true,
+      "download_url": null,
+      "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/registry/plugins/alpaca/icon.png",
+      "min_core_version": "1.0.0",
+      "capabilities_summary": ["search", "trading", "websocket", "paper_trading"]
+    },
+    {
+      "id": "mock",
+      "name": "Mock Broker",
+      "version": "1.0.0",
+      "vendor": "SandClaw Team",
+      "plugin_type": "api",
+      "region": "Test",
+      "asset_classes": ["STOCK", "CRYPTO"],
+      "description": "Mock Broker for testing — No real money",
+      "description_long": "개발 및 테스트 전용 가상 브로커입니다. 실제 거래소에 연결하지 않고 모의 데이터로 전략을 테스트할 수 있습니다. 기본 제공 테스트 키(mock_api_key / mock_secret_key)로 즉시 사용 가능합니다.",
+      "how_it_works": [
+        "기본 테스트 키를 입력합니다: mock_api_key / mock_secret_key",
+        "활성화 후 MOCK-BTC, MOCK-ETH 등 가상 종목으로 테스트합니다",
+        "전략 개발 완료 후 실제 브로커로 전환합니다"
+      ],
+      "auth_note": "테스트 전용입니다. 실제 자금이 사용되지 않습니다.",
+      "bundled": true,
+      "download_url": null,
+      "icon_url": null,
+      "min_core_version": "1.0.0",
+      "capabilities_summary": ["search", "trading"]
+    },
+    {
+      "id": "kalshi",
+      "name": "Kalshi",
+      "version": "1.0.0",
+      "vendor": "SandClaw Team",
+      "plugin_type": "browser",
+      "region": "US",
+      "asset_classes": ["EVENT_CONTRACT"],
+      "description": "Kalshi prediction market — CFTC-regulated, browser automation",
+      "description_long": "Kalshi prediction market exchange via CDP (Chrome browser automation). Browse markets, view orderbook, place limit/market orders. CFTC-regulated. No API key needed — just log in.",
+      "how_it_works": [
+        "Launch Chrome with remote debugging enabled",
+        "Log in to your Kalshi account in the browser",
+        "Activate this plugin — it connects via CDP automatically"
+      ],
+      "auth_note": "No credentials stored. Your login session stays in your browser. SandClaw never sees your password.",
+      "bundled": true,
+      "download_url": null,
+      "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/registry/plugins/kalshi/icon.png",
+      "min_core_version": "1.0.0",
+      "capabilities_summary": ["search", "trading", "browser"]
+    },
+    {
+      "id": "robinhood",
+      "name": "Robinhood",
+      "version": "1.0.0",
+      "vendor": "SandClaw Team",
+      "plugin_type": "browser",
+      "region": "US",
+      "asset_classes": ["STOCK", "CRYPTO", "EVENT_CONTRACT"],
+      "description": "Robinhood — Commission-free stock & crypto trading via browser",
+      "description_long": "Commission-free stock, crypto, and prediction market trading via Chrome browser automation. SandClaw connects to your Robinhood session through CDP — no API keys needed, just log in to your account. Supports stocks, fractional shares, crypto, and event contracts.",
+      "how_it_works": [
+        "Launch Chrome with remote debugging enabled",
+        "Log in to your Robinhood account in the browser",
+        "Activate this plugin — it connects via CDP automatically"
+      ],
+      "auth_note": "No credentials stored. Your login session stays in your browser. SandClaw never sees your password.",
+      "bundled": true,
+      "download_url": null,
+      "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/registry/plugins/robinhood/icon.png",
+      "min_core_version": "1.0.0",
+      "capabilities_summary": ["search", "trading", "browser"]
+    },
+    {
+      "id": "web_search",
+      "name": "Web Search (DuckDuckGo)",
+      "version": "1.0.0",
+      "vendor": "SandClaw Team",
+      "plugin_type": "monitor",
+      "region": "GLOBAL",
+      "asset_classes": [],
+      "description": "DuckDuckGo-based real-time web search — No API key required",
+      "description_long": "DuckDuckGo 기반 실시간 웹 검색 플러그인입니다. API 키 없이 즉시 사용 가능하며, 챗봇을 통해 최신 뉴스, 시장 정보, 기업 정보 등을 실시간으로 검색할 수 있습니다. 프라이버시를 존중하는 DuckDuckGo 엔진을 사용합니다.",
+      "how_it_works": [
+        "별도 설정 없이 활성화합니다",
+        "챗봇에서 '검색해줘', 'search for...' 등으로 웹 검색을 요청합니다",
+        "검색 결과가 챗봇 응답에 포함됩니다"
+      ],
+      "auth_note": "API 키가 필요 없습니다. DuckDuckGo의 공개 검색 API를 사용합니다.",
+      "bundled": true,
+      "download_url": null,
+      "icon_url": null,
+      "min_core_version": "1.0.0",
+      "capabilities_summary": ["search"]
+    }
+  ]
+}
