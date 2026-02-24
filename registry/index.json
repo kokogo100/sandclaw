@@ -1,6 +1,6 @@
 {
-  "registry_version": "1.0.0",
-  "last_updated": "2026-02-20T00:00:00Z",
+  "registry_version": "1.1.0",
+  "last_updated": "2026-02-25T00:00:00Z",
   "plugins": [
     {
       "id": "upbit",
@@ -135,6 +135,30 @@
       "icon_url": null,
       "min_core_version": "1.0.0",
       "capabilities_summary": ["search"]
+    },
+    {
+      "id": "ls_sec",
+      "name": "LS Securities",
+      "version": "1.0.0",
+      "vendor": "SandClaw Team",
+      "plugin_type": "api",
+      "region": "KR",
+      "asset_classes": ["STOCK"],
+      "description": "LS Securities (LS증권) Open API — Korean stock trading",
+      "description_long": "Official LS Securities (LS증권) plugin for Korean stock trading via OAuth2 REST API. Supports real-time price quotes (t1102), account balance, buy/sell orders (CSPAT00601), and order status. Connects to the KRX (Korea Exchange) through LS증권's Open API platform.",
+      "how_it_works": [
+        "Sign up for LS증권 Open API at openapi.ls-sec.co.kr",
+        "Get your App Key and App Secret Key from the developer portal",
+        "Enter your credentials in the Store",
+        "Verify the connection with Test Connection",
+        "Start trading Korean stocks via chatbot or auto-trading engine"
+      ],
+      "auth_note": "App Key and App Secret Key are encrypted and stored using Windows Credential Manager. OAuth2 Bearer token is refreshed automatically every 24 hours.",
+      "bundled": false,
+      "download_url": "https://github.com/kokogo100/sandclaw/raw/main/releases/ls_sec-v1.0.0.zip",
+      "icon_url": null,
+      "min_core_version": "1.0.0",
+      "capabilities_summary": ["search", "trading"]
     }
   ]
 }
