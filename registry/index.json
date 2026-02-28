@@ -1,6 +1,6 @@
 {
   "registry_version": "1.1.0",
-  "last_updated": "2026-02-25T00:00:00Z",
+  "last_updated": "2026-03-01T00:00:00Z",
   "plugins": [
     {
       "id": "upbit",
@@ -139,26 +139,127 @@
     {
       "id": "ls_sec",
       "name": "LS Securities",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "KR",
       "asset_classes": ["STOCK"],
-      "description": "LS Securities (LS증권) Open API — Korean stock trading",
-      "description_long": "Official LS Securities (LS증권) plugin for Korean stock trading via OAuth2 REST API. Supports real-time price quotes (t1102), account balance, buy/sell orders (CSPAT00601), and order status. Connects to the KRX (Korea Exchange) through LS증권's Open API platform.",
+      "description": "LS Securities (LS증권) Open API — Korean stock price, chart, account balance, buy/sell orders via OAuth2 REST API",
+      "description_long": "LS증권 Open API를 활용한 한국 주식 트레이딩 플러그인. KOSPI, KOSDAQ, ETF, ELW 현물 거래를 지원합니다. 13개 마켓 (7개 지수 + 6개 동적순위), WebSocket 실시간 시세, t8407 배치 조회, 마진 거래(융자매수)를 지원합니다.",
       "how_it_works": [
-        "Sign up for LS증권 Open API at openapi.ls-sec.co.kr",
-        "Get your App Key and App Secret Key from the developer portal",
-        "Enter your credentials in the Store",
-        "Verify the connection with Test Connection",
-        "Start trading Korean stocks via chatbot or auto-trading engine"
+        "LS증권 Open API에서 App Key와 App Secret Key를 발급받으세요",
+        "Store에서 키를 입력하면 OAuth2 Bearer 토큰을 자동 발급합니다",
+        "챗봇에서 '삼성전자 현재가' 등의 명령으로 실시간 시세를 조회하세요",
+        "자동매매 엔진에서 13개 마켓을 활용한 전략을 실행할 수 있습니다"
       ],
-      "auth_note": "App Key and App Secret Key are encrypted and stored using Windows Credential Manager. OAuth2 Bearer token is refreshed automatically every 24 hours.",
+      "auth_note": "LS증권 Open API 포털에서 App Key를 발급받으세요. 키는 Windows Credential Manager에 암호화 저장됩니다.",
       "bundled": false,
-      "download_url": "https://github.com/kokogo100/sandclaw/raw/main/releases/ls_sec-v1.0.0.zip",
+      "is_base": true,
+      "credential_group": "ls_securities",
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.1.0-ls/ls_sec-v1.1.0.zip",
       "icon_url": null,
       "min_core_version": "1.0.0",
-      "capabilities_summary": ["search", "trading"]
+      "capabilities_summary": ["Auto Trading", "WebSocket", "Margin Trading", "Real-time"]
+    },
+    {
+      "id": "ls_sec_futures",
+      "name": "LS Securities Futures",
+      "version": "1.0.0",
+      "vendor": "SandClaw Team",
+      "plugin_type": "api",
+      "region": "KR",
+      "asset_classes": ["FUTURES", "OPTIONS"],
+      "description": "LS증권 선물/옵션 트레이딩 — KOSPI200 선물, 옵션, 주식선물, 상품선물, 미니선물",
+      "description_long": "LS증권 국내 선물/옵션 시장 트레이딩 플러그인. KOSPI200 선물/옵션, 주식선물, 상품선물(금, 돈육 등), 미니KOSPI 선물을 지원합니다. LS Securities 플러그인의 인증을 공유합니다.",
+      "how_it_works": [
+        "먼저 LS Securities (Base) 플러그인을 설치하고 인증하세요",
+        "이 Extension은 Base의 인증을 자동 상속합니다",
+        "선물/옵션 현재가, 차트, 계좌, 주문 기능을 사용할 수 있습니다"
+      ],
+      "auth_note": "LS Securities (Base) 플러그인이 설치되어 있어야 합니다. 인증은 Base에서 관리됩니다.",
+      "bundled": false,
+      "extends": "ls_sec",
+      "is_base": false,
+      "credential_group": "ls_securities",
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.1.0-ls/ls_sec_futures-v1.0.0.zip",
+      "icon_url": null,
+      "min_core_version": "1.0.0",
+      "capabilities_summary": ["Auto Trading", "Futures", "Options"]
+    },
+    {
+      "id": "ls_sec_overseas",
+      "name": "LS Securities Overseas",
+      "version": "1.0.0",
+      "vendor": "SandClaw Team",
+      "plugin_type": "api",
+      "region": "US",
+      "asset_classes": ["STOCK"],
+      "description": "LS증권 해외주식 트레이딩 — 미국 NYSE/AMEX, NASDAQ",
+      "description_long": "LS증권 해외주식 트레이딩 플러그인. 미국 NYSE, AMEX, NASDAQ 주식을 지원합니다. LS Securities 플러그인의 인증을 공유합니다.",
+      "how_it_works": [
+        "먼저 LS Securities (Base) 플러그인을 설치하고 인증하세요",
+        "이 Extension은 Base의 인증을 자동 상속합니다",
+        "해외주식 현재가, 차트, 계좌, 주문 기능을 사용할 수 있습니다"
+      ],
+      "auth_note": "LS Securities (Base) 플러그인이 설치되어 있어야 합니다. 인증은 Base에서 관리됩니다.",
+      "bundled": false,
+      "extends": "ls_sec",
+      "is_base": false,
+      "credential_group": "ls_securities",
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.1.0-ls/ls_sec_overseas-v1.0.0.zip",
+      "icon_url": null,
+      "min_core_version": "1.0.0",
+      "capabilities_summary": ["Auto Trading", "US Stocks"]
+    },
+    {
+      "id": "ls_sec_overseas_futures",
+      "name": "LS Securities Overseas Futures",
+      "version": "1.0.0",
+      "vendor": "SandClaw Team",
+      "plugin_type": "api",
+      "region": "GLOBAL",
+      "asset_classes": ["FUTURES", "OPTIONS"],
+      "description": "LS증권 해외선물/옵션 트레이딩 — CME, EUREX, SGX 등 글로벌 파생상품",
+      "description_long": "LS증권 해외선물/옵션 트레이딩 플러그인. CME(미국), EUREX(유럽), SGX(싱가포르) 등 글로벌 파생상품 시장을 지원합니다. LS Securities 플러그인의 인증을 공유합니다.",
+      "how_it_works": [
+        "먼저 LS Securities (Base) 플러그인을 설치하고 인증하세요",
+        "이 Extension은 Base의 인증을 자동 상속합니다",
+        "해외선물/옵션 현재가, 차트, 계좌, 주문 기능을 사용할 수 있습니다"
+      ],
+      "auth_note": "LS Securities (Base) 플러그인이 설치되어 있어야 합니다. 인증은 Base에서 관리됩니다.",
+      "bundled": false,
+      "extends": "ls_sec",
+      "is_base": false,
+      "credential_group": "ls_securities",
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.1.0-ls/ls_sec_overseas_futures-v1.0.0.zip",
+      "icon_url": null,
+      "min_core_version": "1.0.0",
+      "capabilities_summary": ["Auto Trading", "Global Futures", "Options"]
+    },
+    {
+      "id": "ls_sec_night",
+      "name": "LS Securities KRX Night Derivatives",
+      "version": "1.0.0",
+      "vendor": "SandClaw Team",
+      "plugin_type": "api",
+      "region": "KR",
+      "asset_classes": ["FUTURES", "OPTIONS"],
+      "description": "LS증권 KRX야간파생 — 야간 KOSPI200선물/옵션, 미니선물/옵션, 코스닥150선물/옵션, 상품선물, 위클리옵션",
+      "description_long": "LS증권 KRX 야간파생 시장 트레이딩 플러그인. 야간 KOSPI200 선물/옵션, 미니선물/옵션, 코스닥150 선물/옵션, 상품선물, 위클리옵션을 지원합니다. 거래 시간: 17:00~03:30 KST. LS Securities 플러그인의 인증을 공유합니다.",
+      "how_it_works": [
+        "먼저 LS Securities (Base) 플러그인을 설치하고 인증하세요",
+        "이 Extension은 Base의 인증을 자동 상속합니다",
+        "야간파생 현재가, 차트, 계좌, 주문 기능을 사용할 수 있습니다 (17:00~03:30 KST)"
+      ],
+      "auth_note": "LS Securities (Base) 플러그인이 설치되어 있어야 합니다. 인증은 Base에서 관리됩니다.",
+      "bundled": false,
+      "extends": "ls_sec",
+      "is_base": false,
+      "credential_group": "ls_securities",
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.1.0-ls/ls_sec_night-v1.0.0.zip",
+      "icon_url": null,
+      "min_core_version": "1.0.0",
+      "capabilities_summary": ["Auto Trading", "Night Trading", "Futures", "Options"]
     }
   ]
 }
