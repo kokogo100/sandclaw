@@ -9,7 +9,9 @@
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "KR",
-      "asset_classes": ["CRYPTO"],
+      "asset_classes": [
+        "CRYPTO"
+      ],
       "description": "Upbit Official API — Real-time crypto trading",
       "description_long": "Official API plugin for Upbit, Korea's largest cryptocurrency exchange. Supports real-time price quotes, market/limit orders, portfolio tracking, and full symbol scanning. Fully compatible with the auto-trading engine. Built on the pyupbit library for stable and reliable integration.",
       "how_it_works": [
@@ -23,7 +25,11 @@
       "download_url": null,
       "icon_url": null,
       "min_core_version": "1.0.0",
-      "capabilities_summary": ["search", "trading", "realtime"]
+      "capabilities_summary": [
+        "search",
+        "trading",
+        "realtime"
+      ]
     },
     {
       "id": "alpaca",
@@ -32,7 +38,10 @@
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "US",
-      "asset_classes": ["STOCK", "CRYPTO"],
+      "asset_classes": [
+        "STOCK",
+        "CRYPTO"
+      ],
       "description": "Alpaca Markets — US Stock & Crypto Trading",
       "description_long": "Official plugin for Alpaca, a commission-free US stock and crypto trading platform. Supports 8 markets including S&P 500, NASDAQ, NYSE, and crypto. Test strategies safely with Paper Trading mode. Features WebSocket real-time quotes and fractional shares support.",
       "how_it_works": [
@@ -46,7 +55,12 @@
       "download_url": null,
       "icon_url": null,
       "min_core_version": "1.0.0",
-      "capabilities_summary": ["search", "trading", "websocket", "paper_trading"]
+      "capabilities_summary": [
+        "search",
+        "trading",
+        "websocket",
+        "paper_trading"
+      ]
     },
     {
       "id": "mock",
@@ -55,7 +69,10 @@
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "Test",
-      "asset_classes": ["STOCK", "CRYPTO"],
+      "asset_classes": [
+        "STOCK",
+        "CRYPTO"
+      ],
       "description": "Mock Broker for testing — No real money",
       "description_long": "A virtual broker for development and testing. Test your trading strategies with simulated data without connecting to a real exchange. Ready to use immediately with the built-in test keys (mock_api_key / mock_secret_key).",
       "how_it_works": [
@@ -68,7 +85,10 @@
       "download_url": null,
       "icon_url": null,
       "min_core_version": "1.0.0",
-      "capabilities_summary": ["search", "trading"]
+      "capabilities_summary": [
+        "search",
+        "trading"
+      ]
     },
     {
       "id": "kalshi",
@@ -77,7 +97,9 @@
       "vendor": "SandClaw Team",
       "plugin_type": "browser",
       "region": "US",
-      "asset_classes": ["EVENT_CONTRACT"],
+      "asset_classes": [
+        "EVENT_CONTRACT"
+      ],
       "description": "Kalshi prediction market — CFTC-regulated, browser automation",
       "description_long": "Kalshi prediction market exchange via CDP (Chrome browser automation). Browse markets, view orderbook, place limit/market orders. CFTC-regulated. No API key needed — just log in.",
       "how_it_works": [
@@ -90,7 +112,11 @@
       "download_url": null,
       "icon_url": null,
       "min_core_version": "1.0.0",
-      "capabilities_summary": ["search", "trading", "browser"]
+      "capabilities_summary": [
+        "search",
+        "trading",
+        "browser"
+      ]
     },
     {
       "id": "robinhood",
@@ -99,7 +125,11 @@
       "vendor": "SandClaw Team",
       "plugin_type": "browser",
       "region": "US",
-      "asset_classes": ["STOCK", "CRYPTO", "EVENT_CONTRACT"],
+      "asset_classes": [
+        "STOCK",
+        "CRYPTO",
+        "EVENT_CONTRACT"
+      ],
       "description": "Robinhood — Commission-free stock & crypto trading via browser",
       "description_long": "Commission-free stock, crypto, and prediction market trading via Chrome browser automation. SandClaw connects to your Robinhood session through CDP — no API keys needed, just log in to your account. Supports stocks, fractional shares, crypto, and event contracts.",
       "how_it_works": [
@@ -112,7 +142,11 @@
       "download_url": null,
       "icon_url": null,
       "min_core_version": "1.0.0",
-      "capabilities_summary": ["search", "trading", "browser"]
+      "capabilities_summary": [
+        "search",
+        "trading",
+        "browser"
+      ]
     },
     {
       "id": "web_search",
@@ -134,7 +168,9 @@
       "download_url": null,
       "icon_url": null,
       "min_core_version": "1.0.0",
-      "capabilities_summary": ["search"]
+      "capabilities_summary": [
+        "search"
+      ]
     },
     {
       "id": "ls_sec",
@@ -143,7 +179,9 @@
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "KR",
-      "asset_classes": ["STOCK"],
+      "asset_classes": [
+        "STOCK"
+      ],
       "description": "LS Securities (LS증권) Open API — Korean stock price, chart, account balance, buy/sell orders via OAuth2 REST API",
       "description_long": "LS증권 Open API를 활용한 한국 주식 트레이딩 플러그인. KOSPI, KOSDAQ, ETF, ELW 현물 거래를 지원합니다. 13개 마켓 (7개 지수 + 6개 동적순위), WebSocket 실시간 시세, t8407 배치 조회, 마진 거래(융자매수)를 지원합니다.",
       "how_it_works": [
@@ -159,7 +197,13 @@
       "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.1.0-ls/ls_sec-v1.1.0.zip",
       "icon_url": null,
       "min_core_version": "1.0.0",
-      "capabilities_summary": ["Auto Trading", "WebSocket", "Margin Trading", "Real-time"]
+      "capabilities_summary": [
+        "Auto Trading",
+        "WebSocket",
+        "Margin Trading",
+        "Real-time"
+      ],
+      "download_sha256": "6b3a29d97d7391f90b5fbe8a890c5bf738c4bf83b79e7047c9d27bea611894f6"
     },
     {
       "id": "ls_sec_futures",
@@ -168,7 +212,10 @@
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "KR",
-      "asset_classes": ["FUTURES", "OPTIONS"],
+      "asset_classes": [
+        "FUTURES",
+        "OPTIONS"
+      ],
       "description": "LS증권 선물/옵션 트레이딩 — KOSPI200 선물, 옵션, 주식선물, 상품선물, 미니선물",
       "description_long": "LS증권 국내 선물/옵션 시장 트레이딩 플러그인. KOSPI200 선물/옵션, 주식선물, 상품선물(금, 돈육 등), 미니KOSPI 선물을 지원합니다. LS Securities 플러그인의 인증을 공유합니다.",
       "how_it_works": [
@@ -184,7 +231,12 @@
       "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.1.0-ls/ls_sec_futures-v1.0.0.zip",
       "icon_url": null,
       "min_core_version": "1.0.0",
-      "capabilities_summary": ["Auto Trading", "Futures", "Options"]
+      "capabilities_summary": [
+        "Auto Trading",
+        "Futures",
+        "Options"
+      ],
+      "download_sha256": "39189c001448623b9c90712ef369e4fb28a6ee00083ccbbc950cdba37128b33f"
     },
     {
       "id": "ls_sec_overseas",
@@ -193,7 +245,9 @@
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "US",
-      "asset_classes": ["STOCK"],
+      "asset_classes": [
+        "STOCK"
+      ],
       "description": "LS증권 해외주식 트레이딩 — 미국 NYSE/AMEX, NASDAQ",
       "description_long": "LS증권 해외주식 트레이딩 플러그인. 미국 NYSE, AMEX, NASDAQ 주식을 지원합니다. LS Securities 플러그인의 인증을 공유합니다.",
       "how_it_works": [
@@ -209,7 +263,11 @@
       "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.1.0-ls/ls_sec_overseas-v1.0.0.zip",
       "icon_url": null,
       "min_core_version": "1.0.0",
-      "capabilities_summary": ["Auto Trading", "US Stocks"]
+      "capabilities_summary": [
+        "Auto Trading",
+        "US Stocks"
+      ],
+      "download_sha256": "d169c7b2ab11974f56f794b54861f15a462668253ae1d7ebb0ce1f90199ee25d"
     },
     {
       "id": "ls_sec_overseas_futures",
@@ -218,7 +276,10 @@
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "GLOBAL",
-      "asset_classes": ["FUTURES", "OPTIONS"],
+      "asset_classes": [
+        "FUTURES",
+        "OPTIONS"
+      ],
       "description": "LS증권 해외선물/옵션 트레이딩 — CME, EUREX, SGX 등 글로벌 파생상품",
       "description_long": "LS증권 해외선물/옵션 트레이딩 플러그인. CME(미국), EUREX(유럽), SGX(싱가포르) 등 글로벌 파생상품 시장을 지원합니다. LS Securities 플러그인의 인증을 공유합니다.",
       "how_it_works": [
@@ -234,7 +295,12 @@
       "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.1.0-ls/ls_sec_overseas_futures-v1.0.0.zip",
       "icon_url": null,
       "min_core_version": "1.0.0",
-      "capabilities_summary": ["Auto Trading", "Global Futures", "Options"]
+      "capabilities_summary": [
+        "Auto Trading",
+        "Global Futures",
+        "Options"
+      ],
+      "download_sha256": "bf1e223de9045e397d6fbc1c78edf64bf512694b8278d6595c357c88d031bb8d"
     },
     {
       "id": "ls_sec_night",
@@ -243,7 +309,10 @@
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "KR",
-      "asset_classes": ["FUTURES", "OPTIONS"],
+      "asset_classes": [
+        "FUTURES",
+        "OPTIONS"
+      ],
       "description": "LS증권 KRX야간파생 — 야간 KOSPI200선물/옵션, 미니선물/옵션, 코스닥150선물/옵션, 상품선물, 위클리옵션",
       "description_long": "LS증권 KRX 야간파생 시장 트레이딩 플러그인. 야간 KOSPI200 선물/옵션, 미니선물/옵션, 코스닥150 선물/옵션, 상품선물, 위클리옵션을 지원합니다. 거래 시간: 17:00~03:30 KST. LS Securities 플러그인의 인증을 공유합니다.",
       "how_it_works": [
@@ -259,7 +328,13 @@
       "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.1.0-ls/ls_sec_night-v1.0.0.zip",
       "icon_url": null,
       "min_core_version": "1.0.0",
-      "capabilities_summary": ["Auto Trading", "Night Trading", "Futures", "Options"]
+      "capabilities_summary": [
+        "Auto Trading",
+        "Night Trading",
+        "Futures",
+        "Options"
+      ],
+      "download_sha256": "ba3014550cef155458e7239a2479214c9344788282eef0325d87e1276410f48c"
     }
   ]
 }
