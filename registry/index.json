@@ -195,7 +195,7 @@
       "is_base": true,
       "credential_group": "ls_securities",
       "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.1.0-ls/ls_sec-v1.1.0.zip",
-      "icon_url": null,
+      "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/LS.png",
       "min_core_version": "1.0.0",
       "capabilities_summary": [
         "Auto Trading",
@@ -229,7 +229,7 @@
       "is_base": false,
       "credential_group": "ls_securities",
       "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.1.0-ls/ls_sec_futures-v1.0.0.zip",
-      "icon_url": null,
+      "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/LS.png",
       "min_core_version": "1.0.0",
       "capabilities_summary": [
         "Auto Trading",
@@ -261,7 +261,7 @@
       "is_base": false,
       "credential_group": "ls_securities",
       "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.1.0-ls/ls_sec_overseas-v1.0.0.zip",
-      "icon_url": null,
+      "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/LS.png",
       "min_core_version": "1.0.0",
       "capabilities_summary": [
         "Auto Trading",
@@ -293,7 +293,7 @@
       "is_base": false,
       "credential_group": "ls_securities",
       "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.1.0-ls/ls_sec_overseas_futures-v1.0.0.zip",
-      "icon_url": null,
+      "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/LS.png",
       "min_core_version": "1.0.0",
       "capabilities_summary": [
         "Auto Trading",
@@ -326,7 +326,7 @@
       "is_base": false,
       "credential_group": "ls_securities",
       "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.1.0-ls/ls_sec_night-v1.0.0.zip",
-      "icon_url": null,
+      "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/LS.png",
       "min_core_version": "1.0.0",
       "capabilities_summary": [
         "Auto Trading",
