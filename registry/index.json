@@ -1,6 +1,6 @@
 {
-  "registry_version": "1.1.0",
-  "last_updated": "2026-03-01T00:00:00Z",
+  "registry_version": "1.2.0",
+  "last_updated": "2026-03-01",
   "plugins": [
     {
       "id": "upbit",
@@ -335,6 +335,98 @@
         "Options"
       ],
       "download_sha256": "ba3014550cef155458e7239a2479214c9344788282eef0325d87e1276410f48c"
+    },
+    {
+      "id": "web_browsing_cdp",
+      "name": "Web Browsing (CDP)",
+      "version": "1.1.0",
+      "vendor": "SandClaw Team",
+      "plugin_type": "browser",
+      "region": "GLOBAL",
+      "asset_classes": [],
+      "description": "General-purpose web browsing via CDP browser automation",
+      "description_long": "General-purpose web browsing via CDP (Chrome browser automation). Browse any website, extract information, monitor pages. No API key needed — uses your real Chrome browser. Detects CAPTCHA/security challenges and pauses for user intervention.",
+      "how_it_works": [
+        "Launch Chrome with remote debugging enabled",
+        "Activate this plugin in the Store",
+        "Use the chatbot to browse any website",
+        "CAPTCHA pages are detected automatically — solve in browser and retry"
+      ],
+      "auth_note": "No credentials needed. Uses your existing Chrome browser session.",
+      "bundled": false,
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.2.0-cdp/web_browsing_cdp-1.1.0.zip",
+      "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/web_browsing.png",
+      "min_core_version": "1.0.0",
+      "capabilities_summary": [
+        "search",
+        "browser"
+      ],
+      "download_sha256": "23634b74f220d40414a8487874b28b324da39bf6939ba849c419ff8fcf006f7e"
+    },
+    {
+      "id": "sbi_sec",
+      "name": "SBI Securities (SBI証券)",
+      "version": "2.0.0",
+      "vendor": "SandClaw Team",
+      "plugin_type": "browser",
+      "region": "JP",
+      "asset_classes": [
+        "STOCK",
+        "ETF",
+        "FUTURES",
+        "OPTIONS"
+      ],
+      "description": "SBI Securities — Japan's #1 broker via CDP (no API available)",
+      "description_long": "SBI Securities (SBI証券) trading via CDP browser automation. Japan's largest online broker with 15M+ accounts. Supports Japanese stocks, US stocks, ETFs, futures and options. No API available — CDP is the only automation method. Full CDP scraping with login detection, balance/portfolio/quote retrieval, and 2-phase Safety Intercept order execution.",
+      "how_it_works": [
+        "Launch Chrome with remote debugging enabled (port 9225)",
+        "Log in to your SBI Securities account in the browser",
+        "Activate this plugin — it connects via CDP automatically",
+        "Orders use 2-phase Safety Intercept: preview screenshot → user confirm → execute"
+      ],
+      "auth_note": "No credentials stored. Your login session stays in your browser. SandClaw never sees your password.",
+      "bundled": false,
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.2.0-cdp/sbi_sec-2.0.0.zip",
+      "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/SBI.png",
+      "min_core_version": "1.0.0",
+      "capabilities_summary": [
+        "search",
+        "trading",
+        "browser"
+      ],
+      "download_sha256": "75e6d33e7272df84c55f086608b4ae9fa009e8595e7d0a53296db2f2dbd76ec2"
+    },
+    {
+      "id": "rakuten_sec",
+      "name": "Rakuten Securities (楽天証券)",
+      "version": "1.0.0",
+      "vendor": "SandClaw Team",
+      "plugin_type": "browser",
+      "region": "JP",
+      "asset_classes": [
+        "STOCK",
+        "ETF",
+        "FUTURES",
+        "OPTIONS"
+      ],
+      "description": "Rakuten Securities — Japan's #1 by accounts via CDP (no API available)",
+      "description_long": "Rakuten Securities (楽天証券) trading via CDP browser automation. Japan's largest broker by account count with 13M+ accounts. Supports Japanese stocks, US stocks, ETFs, futures and options. No API available — CDP is the only automation method.",
+      "how_it_works": [
+        "Launch Chrome with remote debugging enabled (port 9226)",
+        "Log in to your Rakuten Securities account in the browser",
+        "Activate this plugin — it connects via CDP automatically"
+      ],
+      "auth_note": "No credentials stored. Your login session stays in your browser. SandClaw never sees your password.",
+      "bundled": false,
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.2.0-cdp/rakuten_sec-1.0.0.zip",
+      "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/Rakuten.png",
+      "min_core_version": "1.0.0",
+      "capabilities_summary": [
+        "search",
+        "trading",
+        "browser"
+      ],
+      "download_sha256": "850cb4e9d166fe3af93fe32b90437f3cf4a5141f5aa78a08077d511c51e5b792"
     }
   ]
 }
