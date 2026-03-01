@@ -12,7 +12,7 @@
       "asset_classes": [
         "CRYPTO"
       ],
-      "description": "Upbit Official API â Real-time crypto trading",
+      "description": "Upbit Official API — Real-time crypto trading",
       "description_long": "Official API plugin for Upbit, Korea's largest cryptocurrency exchange. Supports real-time price quotes, market/limit orders, portfolio tracking, and full symbol scanning. Fully compatible with the auto-trading engine. Built on the pyupbit library for stable and reliable integration.",
       "how_it_works": [
         "Get your API Key from your Upbit account (Open API management page)",
@@ -42,7 +42,7 @@
         "STOCK",
         "CRYPTO"
       ],
-      "description": "Alpaca Markets â US Stock & Crypto Trading",
+      "description": "Alpaca Markets — US Stock & Crypto Trading",
       "description_long": "Official plugin for Alpaca, a commission-free US stock and crypto trading platform. Supports 8 markets including S&P 500, NASDAQ, NYSE, and crypto. Test strategies safely with Paper Trading mode. Features WebSocket real-time quotes and fractional shares support.",
       "how_it_works": [
         "Create an Alpaca account and get your API Key (Paper or Live)",
@@ -73,7 +73,7 @@
         "STOCK",
         "CRYPTO"
       ],
-      "description": "Mock Broker for testing â No real money",
+      "description": "Mock Broker for testing — No real money",
       "description_long": "A virtual broker for development and testing. Test your trading strategies with simulated data without connecting to a real exchange. Ready to use immediately with the built-in test keys (mock_api_key / mock_secret_key).",
       "how_it_works": [
         "Enter the default test keys: mock_api_key / mock_secret_key",
@@ -100,12 +100,12 @@
       "asset_classes": [
         "EVENT_CONTRACT"
       ],
-      "description": "Kalshi prediction market â CFTC-regulated, browser automation",
-      "description_long": "Kalshi prediction market exchange via CDP (Chrome browser automation). Browse markets, view orderbook, place limit/market orders. CFTC-regulated. No API key needed â just log in.",
+      "description": "Kalshi prediction market — CFTC-regulated, browser automation",
+      "description_long": "Kalshi prediction market exchange via CDP (Chrome browser automation). Browse markets, view orderbook, place limit/market orders. CFTC-regulated. No API key needed — just log in.",
       "how_it_works": [
         "Launch Chrome with remote debugging enabled",
         "Log in to your Kalshi account in the browser",
-        "Activate this plugin â it connects via CDP automatically"
+        "Activate this plugin — it connects via CDP automatically"
       ],
       "auth_note": "No credentials stored. Your login session stays in your browser. SandClaw never sees your password.",
       "bundled": true,
@@ -130,12 +130,12 @@
         "CRYPTO",
         "EVENT_CONTRACT"
       ],
-      "description": "Robinhood â Commission-free stock & crypto trading via browser",
-      "description_long": "Commission-free stock, crypto, and prediction market trading via Chrome browser automation. SandClaw connects to your Robinhood session through CDP â no API keys needed, just log in to your account. Supports stocks, fractional shares, crypto, and event contracts.",
+      "description": "Robinhood — Commission-free stock & crypto trading via browser",
+      "description_long": "Commission-free stock, crypto, and prediction market trading via Chrome browser automation. SandClaw connects to your Robinhood session through CDP — no API keys needed, just log in to your account. Supports stocks, fractional shares, crypto, and event contracts.",
       "how_it_works": [
         "Launch Chrome with remote debugging enabled",
         "Log in to your Robinhood account in the browser",
-        "Activate this plugin â it connects via CDP automatically"
+        "Activate this plugin — it connects via CDP automatically"
       ],
       "auth_note": "No credentials stored. Your login session stays in your browser. SandClaw never sees your password.",
       "bundled": true,
@@ -156,11 +156,11 @@
       "plugin_type": "monitor",
       "region": "GLOBAL",
       "asset_classes": [],
-      "description": "DuckDuckGo-based real-time web search â No API key required",
-      "description_long": "Real-time web search plugin powered by DuckDuckGo. No API key required â works instantly. Search for the latest news, market data, and company information through the chatbot. Uses the privacy-respecting DuckDuckGo search engine.",
+      "description": "DuckDuckGo-based real-time web search — No API key required",
+      "description_long": "Real-time web search plugin powered by DuckDuckGo. No API key required — works instantly. Search for the latest news, market data, and company information through the chatbot. Uses the privacy-respecting DuckDuckGo search engine.",
       "how_it_works": [
         "Activate with no additional setup required",
-        "Ask the chatbot to search â e.g., 'search for...', 'find latest news about...'",
+        "Ask the chatbot to search — e.g., 'search for...', 'find latest news about...'",
         "Search results are included directly in the chatbot response"
       ],
       "auth_note": "No API key required. Uses DuckDuckGo's public search API.",
@@ -182,15 +182,15 @@
       "asset_classes": [
         "STOCK"
       ],
-      "description": "LS Securities (LSì¦ê¶) Open API â Korean stock price, chart, account balance, buy/sell orders via OAuth2 REST API",
-      "description_long": "LSì¦ê¶ Open APIë¥¼ íì©í íêµ­ ì£¼ì í¸ë ì´ë© íë¬ê·¸ì¸. KOSPI, KOSDAQ, ETF, ELW íë¬¼ ê±°ëë¥¼ ì§ìí©ëë¤. 13ê° ë§ì¼ (7ê° ì§ì + 6ê° ëì ìì), WebSocket ì¤ìê° ìì¸, t8407 ë°°ì¹ ì¡°í, ë§ì§ ê±°ë(ìµìë§¤ì)ë¥¼ ì§ìí©ëë¤.",
+      "description": "LS Securities (LS증권) Open API — Korean stock price, chart, account balance, buy/sell orders via OAuth2 REST API",
+      "description_long": "LS증권 Open API를 활용한 한국 주식 트레이딩 플러그인. KOSPI, KOSDAQ, ETF, ELW 현물 거래를 지원합니다. 13개 마켓 (7개 지수 + 6개 동적순위), WebSocket 실시간 시세, t8407 배치 조회, 마진 거래(융자매수)를 지원합니다.",
       "how_it_works": [
-        "LSì¦ê¶ Open APIìì App Keyì App Secret Keyë¥¼ ë°ê¸ë°ì¼ì¸ì",
-        "Storeìì í¤ë¥¼ ìë ¥íë©´ OAuth2 Bearer í í°ì ìë ë°ê¸í©ëë¤",
-        "ì±ë´ìì 'ì¼ì±ì ì íì¬ê°' ë±ì ëªë ¹ì¼ë¡ ì¤ìê° ìì¸ë¥¼ ì¡°ííì¸ì",
-        "ìëë§¤ë§¤ ìì§ìì 13ê° ë§ì¼ì íì©í ì ëµì ì¤íí  ì ììµëë¤"
+        "LS증권 Open API에서 App Key와 App Secret Key를 발급받으세요",
+        "Store에서 키를 입력하면 OAuth2 Bearer 토큰을 자동 발급합니다",
+        "챗봇에서 '삼성전자 현재가' 등의 명령으로 실시간 시세를 조회하세요",
+        "자동매매 엔진에서 13개 마켓을 활용한 전략을 실행할 수 있습니다"
       ],
-      "auth_note": "LSì¦ê¶ Open API í¬í¸ìì App Keyë¥¼ ë°ê¸ë°ì¼ì¸ì. í¤ë Windows Credential Managerì ìí¸í ì ì¥ë©ëë¤.",
+      "auth_note": "LS증권 Open API 포털에서 App Key를 발급받으세요. 키는 Windows Credential Manager에 암호화 저장됩니다.",
       "bundled": false,
       "is_base": true,
       "credential_group": "ls_securities",
@@ -216,14 +216,14 @@
         "FUTURES",
         "OPTIONS"
       ],
-      "description": "LSì¦ê¶ ì ë¬¼/ìµì í¸ë ì´ë© â KOSPI200 ì ë¬¼, ìµì, ì£¼ìì ë¬¼, ìíì ë¬¼, ë¯¸ëì ë¬¼",
-      "description_long": "LSì¦ê¶ êµ­ë´ ì ë¬¼/ìµì ìì¥ í¸ë ì´ë© íë¬ê·¸ì¸. KOSPI200 ì ë¬¼/ìµì, ì£¼ìì ë¬¼, ìíì ë¬¼(ê¸, ëì¡ ë±), ë¯¸ëKOSPI ì ë¬¼ì ì§ìí©ëë¤. LS Securities íë¬ê·¸ì¸ì ì¸ì¦ì ê³µì í©ëë¤.",
+      "description": "LS증권 선물/옵션 트레이딩 — KOSPI200 선물, 옵션, 주식선물, 상품선물, 미니선물",
+      "description_long": "LS증권 국내 선물/옵션 시장 트레이딩 플러그인. KOSPI200 선물/옵션, 주식선물, 상품선물(금, 돈육 등), 미니KOSPI 선물을 지원합니다. LS Securities 플러그인의 인증을 공유합니다.",
       "how_it_works": [
-        "ë¨¼ì  LS Securities (Base) íë¬ê·¸ì¸ì ì¤ì¹íê³  ì¸ì¦íì¸ì",
-        "ì´ Extensionì Baseì ì¸ì¦ì ìë ììí©ëë¤",
-        "ì ë¬¼/ìµì íì¬ê°, ì°¨í¸, ê³ì¢, ì£¼ë¬¸ ê¸°ë¥ì ì¬ì©í  ì ììµëë¤"
+        "먼저 LS Securities (Base) 플러그인을 설치하고 인증하세요",
+        "이 Extension은 Base의 인증을 자동 상속합니다",
+        "선물/옵션 현재가, 차트, 계좌, 주문 기능을 사용할 수 있습니다"
       ],
-      "auth_note": "LS Securities (Base) íë¬ê·¸ì¸ì´ ì¤ì¹ëì´ ìì´ì¼ í©ëë¤. ì¸ì¦ì Baseìì ê´ë¦¬ë©ëë¤.",
+      "auth_note": "LS Securities (Base) 플러그인이 설치되어 있어야 합니다. 인증은 Base에서 관리됩니다.",
       "bundled": false,
       "extends": "ls_sec",
       "is_base": false,
@@ -248,14 +248,14 @@
       "asset_classes": [
         "STOCK"
       ],
-      "description": "LSì¦ê¶ í´ì¸ì£¼ì í¸ë ì´ë© â ë¯¸êµ­ NYSE/AMEX, NASDAQ",
-      "description_long": "LSì¦ê¶ í´ì¸ì£¼ì í¸ë ì´ë© íë¬ê·¸ì¸. ë¯¸êµ­ NYSE, AMEX, NASDAQ ì£¼ìì ì§ìí©ëë¤. LS Securities íë¬ê·¸ì¸ì ì¸ì¦ì ê³µì í©ëë¤.",
+      "description": "LS증권 해외주식 트레이딩 — 미국 NYSE/AMEX, NASDAQ",
+      "description_long": "LS증권 해외주식 트레이딩 플러그인. 미국 NYSE, AMEX, NASDAQ 주식을 지원합니다. LS Securities 플러그인의 인증을 공유합니다.",
       "how_it_works": [
-        "ë¨¼ì  LS Securities (Base) íë¬ê·¸ì¸ì ì¤ì¹íê³  ì¸ì¦íì¸ì",
-        "ì´ Extensionì Baseì ì¸ì¦ì ìë ììí©ëë¤",
-        "í´ì¸ì£¼ì íì¬ê°, ì°¨í¸, ê³ì¢, ì£¼ë¬¸ ê¸°ë¥ì ì¬ì©í  ì ììµëë¤"
+        "먼저 LS Securities (Base) 플러그인을 설치하고 인증하세요",
+        "이 Extension은 Base의 인증을 자동 상속합니다",
+        "해외주식 현재가, 차트, 계좌, 주문 기능을 사용할 수 있습니다"
       ],
-      "auth_note": "LS Securities (Base) íë¬ê·¸ì¸ì´ ì¤ì¹ëì´ ìì´ì¼ í©ëë¤. ì¸ì¦ì Baseìì ê´ë¦¬ë©ëë¤.",
+      "auth_note": "LS Securities (Base) 플러그인이 설치되어 있어야 합니다. 인증은 Base에서 관리됩니다.",
       "bundled": false,
       "extends": "ls_sec",
       "is_base": false,
@@ -280,14 +280,14 @@
         "FUTURES",
         "OPTIONS"
       ],
-      "description": "LSì¦ê¶ í´ì¸ì ë¬¼/ìµì í¸ë ì´ë© â CME, EUREX, SGX ë± ê¸ë¡ë² íììí",
-      "description_long": "LSì¦ê¶ í´ì¸ì ë¬¼/ìµì í¸ë ì´ë© íë¬ê·¸ì¸. CME(ë¯¸êµ­), EUREX(ì ë½), SGX(ì±ê°í¬ë¥´) ë± ê¸ë¡ë² íììí ìì¥ì ì§ìí©ëë¤. LS Securities íë¬ê·¸ì¸ì ì¸ì¦ì ê³µì í©ëë¤.",
+      "description": "LS증권 해외선물/옵션 트레이딩 — CME, EUREX, SGX 등 글로벌 파생상품",
+      "description_long": "LS증권 해외선물/옵션 트레이딩 플러그인. CME(미국), EUREX(유럽), SGX(싱가포르) 등 글로벌 파생상품 시장을 지원합니다. LS Securities 플러그인의 인증을 공유합니다.",
       "how_it_works": [
-        "ë¨¼ì  LS Securities (Base) íë¬ê·¸ì¸ì ì¤ì¹íê³  ì¸ì¦íì¸ì",
-        "ì´ Extensionì Baseì ì¸ì¦ì ìë ììí©ëë¤",
-        "í´ì¸ì ë¬¼/ìµì íì¬ê°, ì°¨í¸, ê³ì¢, ì£¼ë¬¸ ê¸°ë¥ì ì¬ì©í  ì ììµëë¤"
+        "먼저 LS Securities (Base) 플러그인을 설치하고 인증하세요",
+        "이 Extension은 Base의 인증을 자동 상속합니다",
+        "해외선물/옵션 현재가, 차트, 계좌, 주문 기능을 사용할 수 있습니다"
       ],
-      "auth_note": "LS Securities (Base) íë¬ê·¸ì¸ì´ ì¤ì¹ëì´ ìì´ì¼ í©ëë¤. ì¸ì¦ì Baseìì ê´ë¦¬ë©ëë¤.",
+      "auth_note": "LS Securities (Base) 플러그인이 설치되어 있어야 합니다. 인증은 Base에서 관리됩니다.",
       "bundled": false,
       "extends": "ls_sec",
       "is_base": false,
@@ -313,14 +313,14 @@
         "FUTURES",
         "OPTIONS"
       ],
-      "description": "LSì¦ê¶ KRXì¼ê°íì â ì¼ê° KOSPI200ì ë¬¼/ìµì, ë¯¸ëì ë¬¼/ìµì, ì½ì¤ë¥150ì ë¬¼/ìµì, ìíì ë¬¼, ìí´ë¦¬ìµì",
-      "description_long": "LSì¦ê¶ KRX ì¼ê°íì ìì¥ í¸ë ì´ë© íë¬ê·¸ì¸. ì¼ê° KOSPI200 ì ë¬¼/ìµì, ë¯¸ëì ë¬¼/ìµì, ì½ì¤ë¥150 ì ë¬¼/ìµì, ìíì ë¬¼, ìí´ë¦¬ìµìì ì§ìí©ëë¤. ê±°ë ìê°: 17:00~03:30 KST. LS Securities íë¬ê·¸ì¸ì ì¸ì¦ì ê³µì í©ëë¤.",
+      "description": "LS증권 KRX야간파생 — 야간 KOSPI200선물/옵션, 미니선물/옵션, 코스닥150선물/옵션, 상품선물, 위클리옵션",
+      "description_long": "LS증권 KRX 야간파생 시장 트레이딩 플러그인. 야간 KOSPI200 선물/옵션, 미니선물/옵션, 코스닥150 선물/옵션, 상품선물, 위클리옵션을 지원합니다. 거래 시간: 17:00~03:30 KST. LS Securities 플러그인의 인증을 공유합니다.",
       "how_it_works": [
-        "ë¨¼ì  LS Securities (Base) íë¬ê·¸ì¸ì ì¤ì¹íê³  ì¸ì¦íì¸ì",
-        "ì´ Extensionì Baseì ì¸ì¦ì ìë ììí©ëë¤",
-        "ì¼ê°íì íì¬ê°, ì°¨í¸, ê³ì¢, ì£¼ë¬¸ ê¸°ë¥ì ì¬ì©í  ì ììµëë¤ (17:00~03:30 KST)"
+        "먼저 LS Securities (Base) 플러그인을 설치하고 인증하세요",
+        "이 Extension은 Base의 인증을 자동 상속합니다",
+        "야간파생 현재가, 차트, 계좌, 주문 기능을 사용할 수 있습니다 (17:00~03:30 KST)"
       ],
-      "auth_note": "LS Securities (Base) íë¬ê·¸ì¸ì´ ì¤ì¹ëì´ ìì´ì¼ í©ëë¤. ì¸ì¦ì Baseìì ê´ë¦¬ë©ëë¤.",
+      "auth_note": "LS Securities (Base) 플러그인이 설치되어 있어야 합니다. 인증은 Base에서 관리됩니다.",
       "bundled": false,
       "extends": "ls_sec",
       "is_base": false,
@@ -345,12 +345,12 @@
       "region": "GLOBAL",
       "asset_classes": [],
       "description": "General-purpose web browsing via CDP browser automation",
-      "description_long": "General-purpose web browsing via CDP (Chrome browser automation). Browse any website, extract information, monitor pages. No API key needed â uses your real Chrome browser. Detects CAPTCHA/security challenges and pauses for user intervention.",
+      "description_long": "General-purpose web browsing via CDP (Chrome browser automation). Browse any website, extract information, monitor pages. No API key needed — uses your real Chrome browser. Detects CAPTCHA/security challenges and pauses for user intervention.",
       "how_it_works": [
         "Launch Chrome with remote debugging enabled",
         "Activate this plugin in the Store",
         "Use the chatbot to browse any website",
-        "CAPTCHA pages are detected automatically â solve in browser and retry"
+        "CAPTCHA pages are detected automatically — solve in browser and retry"
       ],
       "auth_note": "No credentials needed. Uses your existing Chrome browser session.",
       "bundled": false,
@@ -365,7 +365,7 @@
     },
     {
       "id": "sbi_sec",
-      "name": "SBI Securities (SBIè¨¼å¸)",
+      "name": "SBI Securities (SBI証券)",
       "version": "2.0.0",
       "vendor": "SandClaw Team",
       "plugin_type": "browser",
@@ -376,13 +376,13 @@
         "FUTURES",
         "OPTIONS"
       ],
-      "description": "SBI Securities â Japan's #1 broker via CDP (no API available)",
-      "description_long": "SBI Securities (SBIè¨¼å¸) trading via CDP browser automation. Japan's largest online broker with 15M+ accounts. Supports Japanese stocks, US stocks, ETFs, futures and options. No API available â CDP is the only automation method. Full CDP scraping with login detection, balance/portfolio/quote retrieval, and 2-phase Safety Intercept order execution.",
+      "description": "SBI Securities — Japan's #1 broker via CDP (no API available)",
+      "description_long": "SBI Securities (SBI証券) trading via CDP browser automation. Japan's largest online broker with 15M+ accounts. Supports Japanese stocks, US stocks, ETFs, futures and options. No API available — CDP is the only automation method. Full CDP scraping with login detection, balance/portfolio/quote retrieval, and 2-phase Safety Intercept order execution.",
       "how_it_works": [
         "Launch Chrome with remote debugging enabled (port 9225)",
         "Log in to your SBI Securities account in the browser",
-        "Activate this plugin â it connects via CDP automatically",
-        "Orders use 2-phase Safety Intercept: preview screenshot â user confirm â execute"
+        "Activate this plugin — it connects via CDP automatically",
+        "Orders use 2-phase Safety Intercept: preview screenshot → user confirm → execute"
       ],
       "auth_note": "No credentials stored. Your login session stays in your browser. SandClaw never sees your password.",
       "bundled": false,
@@ -398,7 +398,7 @@
     },
     {
       "id": "rakuten_sec",
-      "name": "Rakuten Securities (æ¥½å¤©è¨¼å¸)",
+      "name": "Rakuten Securities (楽天証券)",
       "version": "1.0.0",
       "vendor": "SandClaw Team",
       "plugin_type": "browser",
@@ -409,12 +409,12 @@
         "FUTURES",
         "OPTIONS"
       ],
-      "description": "Rakuten Securities â Japan's #1 by accounts via CDP (no API available)",
-      "description_long": "Rakuten Securities (æ¥½å¤©è¨¼å¸) trading via CDP browser automation. Japan's largest broker by account count with 13M+ accounts. Supports Japanese stocks, US stocks, ETFs, futures and options. No API available â CDP is the only automation method.",
+      "description": "Rakuten Securities — Japan's #1 by accounts via CDP (no API available)",
+      "description_long": "Rakuten Securities (楽天証券) trading via CDP browser automation. Japan's largest broker by account count with 13M+ accounts. Supports Japanese stocks, US stocks, ETFs, futures and options. No API available — CDP is the only automation method.",
       "how_it_works": [
         "Launch Chrome with remote debugging enabled (port 9226)",
         "Log in to your Rakuten Securities account in the browser",
-        "Activate this plugin â it connects via CDP automatically"
+        "Activate this plugin — it connects via CDP automatically"
       ],
       "auth_note": "No credentials stored. Your login session stays in your browser. SandClaw never sees your password.",
       "bundled": false,
@@ -439,14 +439,14 @@
         "STOCK",
         "ETF"
       ],
-      "description": "kabu STATION API — 日本株の現在値・口座残高・売買注文",
-      "description_long": "三菱UFJ eスマート証券のkabu STATION APIを活用した日本株トレーディングプラグイン。東証プライム・スタンダード・グロース全銘柄、ETF対応。WebSocketリアルタイム、ランキング、自動売買エンジン対応。",
+      "description": "kabu STATION API \u2014 \u65e5\u672c\u682a\u306e\u73fe\u5728\u5024\u30fb\u53e3\u5ea7\u6b8b\u9ad8\u30fb\u58f2\u8cb7\u6ce8\u6587",
+      "description_long": "\u4e09\u83f1UFJ e\u30b9\u30de\u30fc\u30c8\u8a3c\u5238\u306ekabu STATION API\u3092\u6d3b\u7528\u3057\u305f\u65e5\u672c\u682a\u30c8\u30ec\u30fc\u30c7\u30a3\u30f3\u30b0\u30d7\u30e9\u30b0\u30a4\u30f3\u3002\u6771\u8a3c\u30d7\u30e9\u30a4\u30e0\u30fb\u30b9\u30bf\u30f3\u30c0\u30fc\u30c9\u30fb\u30b0\u30ed\u30fc\u30b9\u5168\u9298\u67c4\u3001ETF\u5bfe\u5fdc\u3002WebSocket\u30ea\u30a2\u30eb\u30bf\u30a4\u30e0\u3001\u30e9\u30f3\u30ad\u30f3\u30b0\u3001\u81ea\u52d5\u58f2\u8cb7\u30a8\u30f3\u30b8\u30f3\u5bfe\u5fdc\u3002",
       "how_it_works": [
-        "kabu STATIONアプリを起動してAPI設定でパスワードを設定",
-        "StoreでAPIパスワードと取引パスワードを入力",
-        "チャットで「トヨタ 現在値」等で即時利用可能"
+        "kabu STATION\u30a2\u30d7\u30ea\u3092\u8d77\u52d5\u3057\u3066API\u8a2d\u5b9a\u3067\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u8a2d\u5b9a",
+        "Store\u3067API\u30d1\u30b9\u30ef\u30fc\u30c9\u3068\u53d6\u5f15\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u5165\u529b",
+        "\u30c1\u30e3\u30c3\u30c8\u3067\u300c\u30c8\u30e8\u30bf \u73fe\u5728\u5024\u300d\u7b49\u3067\u5373\u6642\u5229\u7528\u53ef\u80fd"
       ],
-      "auth_note": "kabu STATIONデスクトップアプリがPCで起動中であることが必要です。パスワードはWindows Credential Managerに暗号化保存されます。",
+      "auth_note": "kabu STATION\u30c7\u30b9\u30af\u30c8\u30c3\u30d7\u30a2\u30d7\u30ea\u304cPC\u3067\u8d77\u52d5\u4e2d\u3067\u3042\u308b\u3053\u3068\u304c\u5fc5\u8981\u3067\u3059\u3002\u30d1\u30b9\u30ef\u30fc\u30c9\u306fWindows Credential Manager\u306b\u6697\u53f7\u5316\u4fdd\u5b58\u3055\u308c\u307e\u3059\u3002",
       "bundled": false,
       "is_base": true,
       "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.3.0-kabu/kabu_jp-1.0.0.zip",
