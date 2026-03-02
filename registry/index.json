@@ -1,5 +1,5 @@
 {
-  "registry_version": "1.3.0",
+  "registry_version": "1.4.0",
   "last_updated": "2026-03-02",
   "plugins": [
     {
@@ -459,6 +459,36 @@
         "Real-time"
       ],
       "download_sha256": "5a7313531fd57918bf7fbd21807e998b5964131c49a9df7951e04efe248292ca"
+    },
+    {
+      "id": "kalshi_api",
+      "name": "Kalshi (API)",
+      "version": "1.0.0",
+      "vendor": "SandClaw Team",
+      "plugin_type": "api",
+      "region": "US",
+      "asset_classes": ["EVENT_CONTRACT"],
+      "description": "Kalshi Prediction Market — CFTC-regulated YES/NO contract trading via REST API",
+      "description_long": "Official REST API plugin for Kalshi, the #1 CFTC-regulated prediction market exchange in the US. Trade on event outcomes across 16 categories including Crypto, Politics, Sports, Economics, and more. Supports 38 tools for market discovery, orderbook viewing, limit/market orders, portfolio tracking, and WebSocket real-time data. RSA-PSS authentication with encrypted key storage.",
+      "how_it_works": [
+        "Get your API Key ID and RSA Private Key from kalshi.com/account/api-keys",
+        "Enter your credentials in the Credential Vault",
+        "Test Connection to verify API access",
+        "Use the chatbot to explore markets and place orders — no strategy code needed"
+      ],
+      "auth_note": "RSA Private Key is encrypted and stored using Windows Credential Manager. Dual persistence (Keyring + encrypted file). Never transmitted in plain text.",
+      "bundled": false,
+      "is_base": true,
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.4.0-kalshi/kalshi_api-1.0.0.zip",
+      "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/Kalshi.png",
+      "min_core_version": "1.0.0",
+      "capabilities_summary": [
+        "Auto Trading",
+        "WebSocket",
+        "Real-time",
+        "Prediction Market"
+      ],
+      "download_sha256": "3fc933afefabf32f839b5c9645be5523fa962ad8774a04ca0612f1681c79ed01"
     }
   ]
 }
