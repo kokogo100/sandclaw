@@ -452,6 +452,7 @@
       "download_url": null,
       "restriction_notice": "kabu STATION API の利用規約により、Store からの自動インストールはできません。\n\n手動でダウンロードして ~/.sandclaw/plugins/ に配置すれば利用可能です。\n\n※ kabucom からテスト環境の提供を受けられなかったため、実環境での十分なテストが行えていません。不具合がありましたら GitHub Issue でご報告ください — フィードバックに基づいてアップデートを提供いたします。",
       "manual_download_url": "https://github.com/kokogo100/sandclaw/releases/tag/v1.3.0-kabu",
+      "restriction_proof_image": "kabu.png",
       "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/kabu_station.png",
       "min_core_version": "1.0.0",
       "capabilities_summary": [
