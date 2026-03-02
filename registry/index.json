@@ -449,7 +449,8 @@
       "auth_note": "kabu STATION\u30c7\u30b9\u30af\u30c8\u30c3\u30d7\u30a2\u30d7\u30ea\u304cPC\u3067\u8d77\u52d5\u4e2d\u3067\u3042\u308b\u3053\u3068\u304c\u5fc5\u8981\u3067\u3059\u3002\u30d1\u30b9\u30ef\u30fc\u30c9\u306fWindows Credential Manager\u306b\u6697\u53f7\u5316\u4fdd\u5b58\u3055\u308c\u307e\u3059\u3002",
       "bundled": false,
       "is_base": true,
-      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.3.0-kabu/kabu_jp-1.0.0.zip",
+      "download_url": null,
+      "restriction_notice": "Due to kabu STATION API Terms of Service, this plugin is developed but not available for distribution. Japanese residents with a 三菱UFJ eスマート証券 account can build it locally via the Plugin Scaffold.",
       "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/kabu_station.png",
       "min_core_version": "1.0.0",
       "capabilities_summary": [
@@ -458,7 +459,7 @@
         "Margin Trading",
         "Real-time"
       ],
-      "download_sha256": "5a7313531fd57918bf7fbd21807e998b5964131c49a9df7951e04efe248292ca"
+      "download_sha256": null
     },
     {
       "id": "kalshi_api",
