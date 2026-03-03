@@ -92,7 +92,7 @@
     },
     {
       "id": "kalshi",
-      "name": "Kalshi",
+      "name": "Kalshi (CDP)",
       "version": "1.0.0",
       "vendor": "SandClaw Team",
       "plugin_type": "browser",
@@ -100,7 +100,7 @@
       "asset_classes": [
         "EVENT_CONTRACT"
       ],
-      "description": "Kalshi prediction market — CFTC-regulated, browser automation",
+      "description": "Kalshi prediction market — CFTC-regulated, browser automation (CDP)",
       "description_long": "Kalshi prediction market exchange via CDP (Chrome browser automation). Browse markets, view orderbook, place limit/market orders. CFTC-regulated. No API key needed — just log in.",
       "how_it_works": [
         "Launch Chrome with remote debugging enabled",
