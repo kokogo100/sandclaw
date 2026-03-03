@@ -1,6 +1,6 @@
 {
-  "registry_version": "1.4.0",
-  "last_updated": "2026-03-02",
+  "registry_version": "1.4.1",
+  "last_updated": "2026-03-03",
   "plugins": [
     {
       "id": "upbit",
@@ -491,7 +491,7 @@
         "Real-time",
         "Prediction Market"
       ],
-      "download_sha256": "ec4e1104776e96344d7ba5f66eb6fb307ed8d3b27b45fe5953b72b5ab00ce522"
+      "download_sha256": "198b225f755f6ada9544d5f4ab761c48077c31c158f09b1d7f882df56842a4d9"
     }
   ]
 }
