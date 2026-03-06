@@ -1,6 +1,6 @@
 {
-  "registry_version": "1.5.0",
-  "last_updated": "2026-03-05",
+  "registry_version": "1.7.0",
+  "last_updated": "2026-03-06",
   "plugins": [
     {
       "id": "upbit",
@@ -626,6 +626,128 @@
         "Margin Trading"
       ],
       "download_sha256": "68b419ff4e8814a08a1463e25205b4669fbc1f4ed44edba4ad798281a4893412"
+    },
+    {
+      "id": "kraken",
+      "name": "Kraken (Base)",
+      "version": "1.0.0",
+      "vendor": "SandClaw Team",
+      "plugin_type": "api",
+      "region": "US",
+      "asset_classes": ["CRYPTO"],
+      "description": "Kraken crypto exchange — 300+ coins, low fees, Spot trading via REST + WebSocket v2",
+      "description_long": "Official REST API plugin for Kraken, a top-tier US cryptocurrency exchange. Trade 300+ coins with low fees across 5 spot markets (USD, EUR, stablecoins, crypto pairs). Features WebSocket v2 real-time streaming, orderbook depth, market scanning, and full order management. HMAC-SHA512 authentication with encrypted key storage.",
+      "how_it_works": [
+        "Generate API key at kraken.com/u/security/api",
+        "Enter API Key and API Secret in Credential Vault",
+        "Plugin connects via REST + WebSocket v2",
+        "Trade spot crypto with market/limit orders"
+      ],
+      "auth_note": "API keys stored locally with AES-256 encryption via Windows Credential Manager. Never transmitted in plain text.",
+      "bundled": false,
+      "is_base": true,
+      "credential_group": "kraken",
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.7.0-kraken/kraken-1.0.0.zip",
+      "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/Kraken.png",
+      "min_core_version": "2.0.0",
+      "capabilities_summary": [
+        "Auto Trading",
+        "WebSocket",
+        "Real-time",
+        "300+ Coins"
+      ],
+      "download_sha256": "504e6d2e9b876b41343421927ed78676f934c53f38add89ae2589c32be29d319"
+    },
+    {
+      "id": "kraken_futures",
+      "name": "Kraken Futures",
+      "version": "1.0.0",
+      "vendor": "SandClaw Team",
+      "plugin_type": "api",
+      "region": "US",
+      "asset_classes": ["CRYPTO_FUTURES"],
+      "extends": "kraken",
+      "description": "Kraken Futures — Crypto perpetuals & fixed-maturity contracts via REST + WebSocket",
+      "description_long": "Extension plugin for Kraken Futures trading. Supports perpetual contracts (PF_XBTUSD), fixed-maturity futures, leverage up to 50x, and real-time WebSocket feeds. Uses separate API endpoint (futures.kraken.com) with sandbox environment available for testing. Requires Kraken (Base) plugin installed.",
+      "how_it_works": [
+        "Install Kraken (Base) plugin first and enter API credentials",
+        "Install this Futures extension from the Store",
+        "Futures markets will appear in Strategy Editor dropdown",
+        "Sandbox mode available for paper trading"
+      ],
+      "auth_note": "Shares API credentials with Kraken (Base) plugin. No additional authentication required.",
+      "bundled": false,
+      "is_base": false,
+      "credential_group": "kraken",
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.7.0-kraken/kraken_futures-1.0.0.zip",
+      "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/Kraken.png",
+      "min_core_version": "2.0.0",
+      "capabilities_summary": [
+        "Futures",
+        "Leverage",
+        "Sandbox"
+      ],
+      "download_sha256": "dbd9d113651e9233bc80b67413a275eb46b9d6cfcf4183aa9ed626ab2312300e"
+    },
+    {
+      "id": "kraken_xstocks",
+      "name": "Kraken xStocks",
+      "version": "1.0.0",
+      "vendor": "SandClaw Team",
+      "plugin_type": "api",
+      "region": "US",
+      "asset_classes": ["TOKENIZED_EQUITY"],
+      "extends": "kraken",
+      "description": "Kraken xStocks — Tokenized US equities (AAPL, TSLA, MSFT...) via Spot API",
+      "description_long": "Extension plugin for Kraken xStocks tokenized equity trading. Trade ~70+ tokenized US stocks (AAPLxUSD, TSLAxUSD, etc.) using the same Spot API with asset_class parameter. Supports 24/5 trading, fractional shares, and real-time WebSocket updates. Requires Kraken (Base) plugin installed.",
+      "how_it_works": [
+        "Install Kraken (Base) plugin first and enter API credentials",
+        "Install this xStocks extension from the Store",
+        "xStocks markets will appear in Strategy Editor dropdown",
+        "Trade tokenized stocks like AAPLxUSD alongside crypto"
+      ],
+      "auth_note": "Shares API credentials with Kraken (Base) plugin. Uses asset_class='tokenized_asset' parameter.",
+      "bundled": false,
+      "is_base": false,
+      "credential_group": "kraken",
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.7.0-kraken/kraken_xstocks-1.0.0.zip",
+      "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/Kraken.png",
+      "min_core_version": "2.0.0",
+      "capabilities_summary": [
+        "Tokenized Stocks",
+        "Fractional Shares",
+        "24/5 Trading"
+      ],
+      "region_notice": "xStocks (tokenized equities) may not be available in all jurisdictions. Check Kraken's supported regions for xStocks trading at kraken.com before installing.",
+      "download_sha256": "895f66f8c108d41076855a924f4e682a479f56d30f9cc4bb5410b1f9a95094b1"
+    },
+    {
+      "id": "kraken_equities",
+      "name": "Kraken Equities",
+      "version": "0.0.0",
+      "vendor": "SandClaw Team",
+      "plugin_type": "api",
+      "region": "US",
+      "asset_classes": ["STOCK", "ETF"],
+      "extends": "kraken",
+      "description": "Kraken Equities — 11,000+ US stocks & ETFs (API not yet available)",
+      "description_long": "Placeholder for Kraken traditional equities trading. Kraken Securities (FINRA member) offers 11,000+ commission-free US stocks and ETFs, but currently only through Kraken Desktop app — no public trading API is available yet.",
+      "how_it_works": [
+        "This plugin cannot be installed — Kraken does not provide a public API for traditional equity trading",
+        "Kraken Equities is currently available only through the Kraken Desktop application",
+        "When Kraken releases a public equities trading API, this plugin will be updated"
+      ],
+      "auth_note": "No API access available at this time.",
+      "bundled": false,
+      "is_base": false,
+      "download_url": null,
+      "restriction_notice": "Kraken Equities does not provide a public trading API.\n\nKraken Securities LLC (FINRA member) offers 11,000+ commission-free US stocks & ETFs, but only through the Kraken Desktop application. Programmatic API access is not available.\n\nKraken is preparing for an IPO in 2026 — a public equities API may become available in the future.\n\nWhen the API is released, this plugin will be updated to support full trading functionality.",
+      "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/Kraken.png",
+      "min_core_version": "2.0.0",
+      "capabilities_summary": [
+        "API Not Available"
+      ],
+      "download_sha256": null
     }
   ]
 }
