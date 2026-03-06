@@ -1,5 +1,5 @@
 {
-  "registry_version": "1.7.0",
+  "registry_version": "1.8.0",
   "last_updated": "2026-03-06",
   "plugins": [
     {
@@ -462,6 +462,37 @@
         "Real-time"
       ],
       "download_sha256": null
+    },
+    {
+      "id": "bitflyer",
+      "name": "bitFlyer Lightning",
+      "version": "1.0.0",
+      "vendor": "SandClaw Team",
+      "plugin_type": "api",
+      "region": "JP",
+      "asset_classes": [
+        "CRYPTO"
+      ],
+      "description": "bitFlyer Lightning — 日本最大の暗号資産取引所。現物取引とCFD取引をサポート。",
+      "description_long": "bitFlyer Lightningは日本最大の暗号資産取引所のトレーディングプラグインです。BTC/JPY、ETH/JPY等の現物取引とFX_BTC_JPYのCFD取引に対応。WebSocketリアルタイム更新、自動売買エンジン対応。",
+      "how_it_works": [
+        "bitFlyerでアカウントを作成し、API Keyを発行",
+        "StoreでAPI KeyとAPI Secretを入力",
+        "チャットで「BTC現在値」等で即時利用可能"
+      ],
+      "auth_note": "API KeyとAPI SecretはWindows Credential Managerに暗号化保存されます。",
+      "bundled": false,
+      "is_base": true,
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.8.0-bitflyer/bitflyer-1.0.0.zip",
+      "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/bitFlyer.png",
+      "min_core_version": "1.0.0",
+      "capabilities_summary": [
+        "Full Symbol Scan",
+        "Realtime Quote",
+        "Historical Data",
+        "Execution"
+      ],
+      "download_sha256": "afd727d370d3421dafbb8f2930fb476c650cab1b1bcacc6cfff9b0039b6d77d0"
     },
     {
       "id": "kalshi_api",
