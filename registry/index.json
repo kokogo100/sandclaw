@@ -1,6 +1,6 @@
 {
-  "registry_version": "1.4.0",
-  "last_updated": "2026-03-02",
+  "registry_version": "1.5.0",
+  "last_updated": "2026-03-15",
   "plugins": [
     {
       "id": "upbit",
@@ -439,14 +439,14 @@
         "STOCK",
         "ETF"
       ],
-      "description": "kabu STATION API \u2014 \u65e5\u672c\u682a\u306e\u73fe\u5728\u5024\u30fb\u53e3\u5ea7\u6b8b\u9ad8\u30fb\u58f2\u8cb7\u6ce8\u6587",
-      "description_long": "\u4e09\u83f1UFJ e\u30b9\u30de\u30fc\u30c8\u8a3c\u5238\u306ekabu STATION API\u3092\u6d3b\u7528\u3057\u305f\u65e5\u672c\u682a\u30c8\u30ec\u30fc\u30c7\u30a3\u30f3\u30b0\u30d7\u30e9\u30b0\u30a4\u30f3\u3002\u6771\u8a3c\u30d7\u30e9\u30a4\u30e0\u30fb\u30b9\u30bf\u30f3\u30c0\u30fc\u30c9\u30fb\u30b0\u30ed\u30fc\u30b9\u5168\u9298\u67c4\u3001ETF\u5bfe\u5fdc\u3002WebSocket\u30ea\u30a2\u30eb\u30bf\u30a4\u30e0\u3001\u30e9\u30f3\u30ad\u30f3\u30b0\u3001\u81ea\u52d5\u58f2\u8cb7\u30a8\u30f3\u30b8\u30f3\u5bfe\u5fdc\u3002",
+      "description": "kabu STATION API — 日本株の現在値・口座残高・売買注文",
+      "description_long": "三菱UFJ eスマート証券のkabu STATION APIを活用した日本株トレーディングプラグイン。東証プライム・スタンダード・グロース全銘柄、ETF対応。WebSocketリアルタイム、ランキング、自動売買エンジン対応。",
       "how_it_works": [
-        "kabu STATION\u30a2\u30d7\u30ea\u3092\u8d77\u52d5\u3057\u3066API\u8a2d\u5b9a\u3067\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u8a2d\u5b9a",
-        "Store\u3067API\u30d1\u30b9\u30ef\u30fc\u30c9\u3068\u53d6\u5f15\u30d1\u30b9\u30ef\u30fc\u30c9\u3092\u5165\u529b",
-        "\u30c1\u30e3\u30c3\u30c8\u3067\u300c\u30c8\u30e8\u30bf \u73fe\u5728\u5024\u300d\u7b49\u3067\u5373\u6642\u5229\u7528\u53ef\u80fd"
+        "kabu STATIONアプリを起動してAPI設定でパスワードを設定",
+        "StoreでAPIパスワードと取引パスワードを入力",
+        "チャットで「トヨタ 現在値」等で即時利用可能"
       ],
-      "auth_note": "kabu STATION\u30c7\u30b9\u30af\u30c8\u30c3\u30d7\u30a2\u30d7\u30ea\u304cPC\u3067\u8d77\u52d5\u4e2d\u3067\u3042\u308b\u3053\u3068\u304c\u5fc5\u8981\u3067\u3059\u3002\u30d1\u30b9\u30ef\u30fc\u30c9\u306fWindows Credential Manager\u306b\u6697\u53f7\u5316\u4fdd\u5b58\u3055\u308c\u307e\u3059\u3002",
+      "auth_note": "kabu STATIONデスクトップアプリがPCで起動中であることが必要です。パスワードはWindows Credential Managerに暗号化保存されます。",
       "bundled": false,
       "is_base": true,
       "download_url": null,
@@ -470,7 +470,9 @@
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "US",
-      "asset_classes": ["EVENT_CONTRACT"],
+      "asset_classes": [
+        "EVENT_CONTRACT"
+      ],
       "description": "Kalshi Prediction Market — CFTC-regulated YES/NO contract trading via REST API",
       "description_long": "Official REST API plugin for Kalshi, the #1 CFTC-regulated prediction market exchange in the US. Trade on event outcomes across 16 categories including Crypto, Politics, Sports, Economics, and more. Supports 38 tools for market discovery, orderbook viewing, limit/market orders, portfolio tracking, and WebSocket real-time data. RSA-PSS authentication with encrypted key storage.",
       "how_it_works": [
@@ -492,6 +494,194 @@
         "Prediction Market"
       ],
       "download_sha256": "ec4e1104776e96344d7ba5f66eb6fb307ed8d3b27b45fe5953b72b5ab00ce522"
+    },
+    {
+      "id": "ibkr",
+      "name": "Interactive Brokers",
+      "version": "1.0.0",
+      "vendor": "SandClaw Team",
+      "plugin_type": "api",
+      "region": "GLOBAL",
+      "asset_classes": [
+        "STOCK"
+      ],
+      "description": "Interactive Brokers (IBKR) — Global stock trading via Client Portal REST API. Supports 150+ markets across 33 countries.",
+      "description_long": "Interactive Brokers (IBKR) is one of the world's largest electronic brokers, providing access to 150+ markets across 33 countries. IBKR does not use traditional API keys. Instead, IBKR provides a 'Client Portal Gateway' — a small Java program that runs locally on your computer (default port: 5000, fixed by IBKR). You log in via your browser, and the plugin communicates through this local Gateway. The Gateway must be running and logged in whenever you use this plugin.",
+      "how_it_works": [
+        "Download and install Java Runtime (JRE 11+) if not already installed",
+        "Download 'Client Portal Gateway' from the IBKR website (Technology > API > Client Portal Gateway)",
+        "Extract the ZIP and run bin/run.bat (Windows) or bin/run.sh (Mac/Linux)",
+        "Open your browser to https://localhost:5000 and log in with your IBKR account",
+        "Come back to SandClaw and click 'TEST CONNECTION' — the plugin will auto-detect your account",
+        "The plugin sends a keep-alive ping every 55 seconds to maintain your session (max 24 hours)"
+      ],
+      "auth_note": "No API keys needed. The Gateway manages authentication via your browser login session. Session expires after 24 hours (IBKR server policy, resets at midnight) — simply re-login at localhost:5000 and click TEST CONNECTION.",
+      "bundled": false,
+      "is_base": true,
+      "credential_group": "ibkr",
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.5.0-ibkr/ibkr-1.0.0.zip",
+      "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/IBKR.png",
+      "min_core_version": "1.0.0",
+      "capabilities_summary": [
+        "Auto Trading",
+        "Paper Trading",
+        "WebSocket",
+        "Real-time",
+        "150+ Markets",
+        "33 Countries"
+      ],
+      "download_sha256": "fb08724443ade911909558628ef1e147eb95c36b79fd698d447c3bf76d682b10"
+    },
+    {
+      "id": "ibkr_options",
+      "name": "IBKR Options",
+      "version": "1.0.0",
+      "vendor": "SandClaw Team",
+      "plugin_type": "api",
+      "region": "GLOBAL",
+      "asset_classes": [
+        "OPTION"
+      ],
+      "description": "IBKR Options Extension — Options chain, Greeks, and options trading via Client Portal API",
+      "how_it_works": [
+        "Install the Interactive Brokers (Base) plugin first",
+        "This Extension inherits authentication from Base automatically",
+        "Access options chains, Greeks, strategies, and order placement"
+      ],
+      "auth_note": "Interactive Brokers (Base) plugin must be installed. Authentication is managed by Base.",
+      "bundled": false,
+      "extends": "ibkr",
+      "is_base": false,
+      "credential_group": "ibkr",
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.5.0-ibkr/ibkr_options-1.0.0.zip",
+      "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/IBKR.png",
+      "min_core_version": "1.0.0",
+      "capabilities_summary": [
+        "Options Chain",
+        "Greeks",
+        "Options Trading"
+      ],
+      "download_sha256": "f72ecafebaa176d07428ba75e0e557e2081791d6c037426e749b0731cae29055"
+    },
+    {
+      "id": "ibkr_futures",
+      "name": "IBKR Futures",
+      "version": "1.0.0",
+      "vendor": "SandClaw Team",
+      "plugin_type": "api",
+      "region": "GLOBAL",
+      "asset_classes": [
+        "FUTURES"
+      ],
+      "description": "IBKR Futures Extension — Global futures trading (Index, Energy, Metals, Agri, Rates, FX)",
+      "how_it_works": [
+        "Install the Interactive Brokers (Base) plugin first",
+        "This Extension inherits authentication from Base automatically",
+        "Access global futures markets, chains, quotes, and order placement"
+      ],
+      "auth_note": "Interactive Brokers (Base) plugin must be installed. Authentication is managed by Base.",
+      "bundled": false,
+      "extends": "ibkr",
+      "is_base": false,
+      "credential_group": "ibkr",
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.5.0-ibkr/ibkr_futures-1.0.0.zip",
+      "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/IBKR.png",
+      "min_core_version": "1.0.0",
+      "capabilities_summary": [
+        "Futures Trading",
+        "Global Markets"
+      ],
+      "download_sha256": "bb9dfe8738d5f66c579d2d2c1551716d58eaf3f6819f379f34dc74667e52e97d"
+    },
+    {
+      "id": "ibkr_forex",
+      "name": "IBKR Forex",
+      "version": "1.0.0",
+      "vendor": "SandClaw Team",
+      "plugin_type": "api",
+      "region": "GLOBAL",
+      "asset_classes": [
+        "FOREX"
+      ],
+      "description": "IBKR Forex Extension — Currency pair trading (Major, Minor, Exotic)",
+      "how_it_works": [
+        "Install the Interactive Brokers (Base) plugin first",
+        "This Extension inherits authentication from Base automatically",
+        "Access forex pairs, real-time rates, quotes, and order placement"
+      ],
+      "auth_note": "Interactive Brokers (Base) plugin must be installed. Authentication is managed by Base.",
+      "bundled": false,
+      "extends": "ibkr",
+      "is_base": false,
+      "credential_group": "ibkr",
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.5.0-ibkr/ibkr_forex-1.0.0.zip",
+      "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/IBKR.png",
+      "min_core_version": "1.0.0",
+      "capabilities_summary": [
+        "Forex Trading",
+        "Currency Pairs"
+      ],
+      "download_sha256": "cd60074bdd4fd502cccc6ca53a82d04eb1db02b54cf71ed0eb8297135bf41f02"
+    },
+    {
+      "id": "ibkr_bonds",
+      "name": "IBKR Bonds",
+      "version": "1.0.0",
+      "vendor": "SandClaw Team",
+      "plugin_type": "api",
+      "region": "GLOBAL",
+      "asset_classes": [
+        "BOND"
+      ],
+      "description": "IBKR Bonds Extension — Government, Corporate, and Municipal bond trading",
+      "how_it_works": [
+        "Install the Interactive Brokers (Base) plugin first",
+        "This Extension inherits authentication from Base automatically",
+        "Access bond search, quotes, and order placement"
+      ],
+      "auth_note": "Interactive Brokers (Base) plugin must be installed. Authentication is managed by Base.",
+      "bundled": false,
+      "extends": "ibkr",
+      "is_base": false,
+      "credential_group": "ibkr",
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.5.0-ibkr/ibkr_bonds-1.0.0.zip",
+      "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/IBKR.png",
+      "min_core_version": "1.0.0",
+      "capabilities_summary": [
+        "Bond Trading",
+        "Fixed Income"
+      ],
+      "download_sha256": "488553273627aba755837b5b7a82898b420c33e91fef4c7085c062e23883d783"
+    },
+    {
+      "id": "ibkr_events",
+      "name": "IBKR Event Contracts",
+      "version": "1.0.0",
+      "vendor": "SandClaw Team",
+      "plugin_type": "api",
+      "region": "US",
+      "asset_classes": [
+        "EVENT"
+      ],
+      "description": "IBKR Event Contracts Extension — Prediction market (Politics, Economics, Weather, Sports)",
+      "how_it_works": [
+        "Install the Interactive Brokers (Base) plugin first",
+        "This Extension inherits authentication from Base automatically",
+        "Browse event categories, view contracts, and place YES/NO orders"
+      ],
+      "auth_note": "Interactive Brokers (Base) plugin must be installed. Authentication is managed by Base.",
+      "bundled": false,
+      "extends": "ibkr",
+      "is_base": false,
+      "credential_group": "ibkr",
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.5.0-ibkr/ibkr_events-1.0.0.zip",
+      "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/IBKR.png",
+      "min_core_version": "1.0.0",
+      "capabilities_summary": [
+        "Event Contracts",
+        "Prediction Market"
+      ],
+      "download_sha256": "4c00790f9b024590b55f78b364ef4b8086ae688b8525e6a79ef979631428082c"
     }
   ]
 }
