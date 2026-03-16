@@ -454,6 +454,7 @@
         "チャットで「トヨタ 現在値」等で即時利用可能"
       ],
       "auth_note": "kabu STATIONデスクトップアプリがPCで起動中であることが必要です。パスワードはWindows Credential Managerに暗号化保存されます。",
+      "testing_notice": "開発者が日本居住者ではないため、実際の口座でテストできていません。問題があればGitHub Issuesでフィードバックをお願いします。",
       "bundled": false,
       "is_base": true,
       "download_url": null,
@@ -489,6 +490,7 @@
         "チャットで「BTC現在値」等で即時利用可能"
       ],
       "auth_note": "API KeyとAPI SecretはWindows Credential Managerに暗号化保存されます。",
+      "testing_notice": "開発者が日本居住者ではないため、実際の口座でテストできていません。問題があればGitHub Issuesでフィードバックをお願いします。",
       "bundled": false,
       "is_base": true,
       "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.8.0-bitflyer/bitflyer-1.0.0.zip",
@@ -590,6 +592,7 @@
         "Click 'TEST CONNECTION' — the plugin auto-generates TOTP and logs in via JWT"
       ],
       "auth_note": "Fully automated login using TOTP (pyotp). No browser redirect needed. Session expires daily at midnight IST; auto-refreshed via JWT refresh token.",
+      "testing_notice": "개발자가 인도 거주자가 아니어서 실제 계좌로 테스트하지 못했습니다. 사용 중 문제가 있으면 GitHub Issues로 피드백 부탁드립니다.",
       "bundled": false,
       "is_base": true,
       "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.5.0-kr-in/angel_one-v1.0.0.zip",
@@ -624,6 +627,7 @@
         "Click 'TEST CONNECTION' — authorize via browser redirect to complete OAuth"
       ],
       "auth_note": "OAuth 2.0 Authorization Code flow. Access tokens are valid for one trading day. Re-authorize each morning if needed.",
+      "testing_notice": "개발자가 인도 거주자가 아니어서 실제 계좌로 테스트하지 못했습니다. 사용 중 문제가 있으면 GitHub Issues로 피드백 부탁드립니다.",
       "bundled": false,
       "is_base": true,
       "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.5.0-kr-in/upstox-v1.0.0.zip",
@@ -659,6 +663,7 @@
         "Paste the request_token in SandClaw and click 'TEST CONNECTION'"
       ],
       "auth_note": "OAuth-like flow with SHA-256 checksum verification. Access tokens expire daily at 6:00 AM IST — you must re-login via Kite redirect each trading day.",
+      "testing_notice": "개발자가 인도 거주자가 아니어서 실제 계좌로 테스트하지 못했습니다. 사용 중 문제가 있으면 GitHub Issues로 피드백 부탁드립니다.",
       "bundled": false,
       "is_base": true,
       "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.5.0-kr-in/zerodha-v1.0.0.zip",

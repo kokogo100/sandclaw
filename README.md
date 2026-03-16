@@ -29,11 +29,11 @@ Plugins listed here are automatically available in the SandClaw IDE **Settings >
 | **Kraken** | Global | Crypto | HMAC-SHA512 | 300+ pairs, WebSocket, Limit Order |
 | **Interactive Brokers** | Global | Multi-Asset | CDP Cookie | 150+ markets, 33 countries, Limit Order |
 | **Kalshi API** | US | Prediction Market | RSA-PSS | 38 tools, all orders are limit |
-| **Angel One** | IN | Stock (NSE/BSE) | API Key | WebSocket, Limit Order |
-| **Zerodha** | IN | Stock (NSE/BSE) | API Key | WebSocket, Limit Order |
-| **Upstox** | IN | Stock (NSE/BSE) | OAuth | WebSocket, Limit Order |
-| **bitFlyer** | JP | Crypto | HMAC-SHA256 | WebSocket, Limit Order |
-| **kabu STATION** | JP | Stock (TSE) | API Key | WebSocket, Limit Order |
+| **Angel One** | IN | Stock (NSE/BSE) | API Key | WebSocket, Limit Order `*` |
+| **Zerodha** | IN | Stock (NSE/BSE) | API Key | WebSocket, Limit Order `*` |
+| **Upstox** | IN | Stock (NSE/BSE) | OAuth | WebSocket, Limit Order `*` |
+| **bitFlyer** | JP | Crypto | HMAC-SHA256 | WebSocket, Limit Order `*` |
+| **kabu STATION** | JP | Stock (TSE) | API Key | WebSocket, Limit Order `*` |
 | **Web Browsing CDP** | — | — | None | General browser automation skill |
 | **SBI Securities** | JP | Stock (TSE) | Browser | CDP automation (Phase 2) |
 | **Rakuten Securities** | JP | Stock (TSE) | Browser | CDP automation (Phase 2) |
@@ -56,6 +56,8 @@ Extensions require their base plugin to be installed.
 | **IBKR Forex** | Interactive Brokers | Forex | Currency pairs, Limit Order |
 | **IBKR Bonds** | Interactive Brokers | Fixed Income | Bond trading, Limit Order |
 | **IBKR Events** | Interactive Brokers | Event Contracts | Prediction market, Limit Order |
+
+> `*` **Community Testing**: 개발자가 해당 국가 거주자가 아니어서 실제 계좌로 테스트하지 못했습니다. API 문서 기반으로 구현되었으며, 사용 중 문제가 있으면 [GitHub Issues](https://github.com/kokogo100/sandclaw/issues)로 피드백 부탁드립니다.
 
 ### Coverage Summary
 
