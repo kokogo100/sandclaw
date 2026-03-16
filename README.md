@@ -1,29 +1,98 @@
 # SandClaw Plugin Registry
 
-Public registry for [SandClaw](https://sandclaw.io) plugins.
+> **Beta** — This registry is currently in beta. Feedback and bug reports are welcome via [GitHub Issues](https://github.com/kokogo100/sandclaw/issues).
 
-## Structure
+Public plugin registry for [SandClaw](https://sandclaw.io), an AI-powered trading IDE.
+Plugins listed here are automatically available in the SandClaw IDE **Settings > Store**.
+
+---
+
+## Plugins (31)
+
+### Bundled (included with IDE)
+
+| Plugin | Region | Asset Class | Features |
+|--------|--------|-------------|----------|
+| **Upbit** | KR | Crypto | WebSocket, Limit Order, 200+ KRW pairs |
+| **Alpaca** | US | Stock, Crypto | Paper Trading, Limit Order, Fractional Shares |
+| **Mock** | — | — | Test/development only |
+| **Kalshi** (Browser) | US | Prediction Market | CDP browser automation |
+| **Robinhood** (Browser) | US | Prediction Market | CDP browser automation |
+| **Web Search** | — | — | Market monitoring, no trading |
+
+### Store — Base Plugins (14)
+
+| Plugin | Region | Asset Class | Auth | Features |
+|--------|--------|-------------|------|----------|
+| **LS Securities** | KR | Stock (KRX) | OAuth | 13 markets, WebSocket, Limit Order |
+| **KIS Securities** | KR | Stock (KRX) | API Key | WebSocket, Limit Order |
+| **Kraken** | Global | Crypto | HMAC-SHA512 | 300+ pairs, WebSocket, Limit Order |
+| **Interactive Brokers** | Global | Multi-Asset | CDP Cookie | 150+ markets, 33 countries, Limit Order |
+| **Kalshi API** | US | Prediction Market | RSA-PSS | 38 tools, all orders are limit |
+| **Angel One** | IN | Stock (NSE/BSE) | API Key | WebSocket, Limit Order |
+| **Zerodha** | IN | Stock (NSE/BSE) | API Key | WebSocket, Limit Order |
+| **Upstox** | IN | Stock (NSE/BSE) | OAuth | WebSocket, Limit Order |
+| **bitFlyer** | JP | Crypto | HMAC-SHA256 | WebSocket, Limit Order |
+| **kabu STATION** | JP | Stock (TSE) | API Key | WebSocket, Limit Order |
+| **Web Browsing CDP** | — | — | None | General browser automation skill |
+| **SBI Securities** | JP | Stock (TSE) | Browser | CDP automation (Phase 2) |
+| **Rakuten Securities** | JP | Stock (TSE) | Browser | CDP automation (Phase 2) |
+| **Kraken Equities** | — | — | — | Placeholder (not yet available) |
+
+### Store — Extension Plugins (11)
+
+Extensions require their base plugin to be installed.
+
+| Extension | Base | Asset Class | Features |
+|-----------|------|-------------|----------|
+| **LS Futures** | LS Securities | KOSPI200 Futures/Options | Limit Order |
+| **LS Night** | LS Securities | Night Session Futures | Limit Order |
+| **LS Overseas** | LS Securities | US Stocks (NYSE/NASDAQ) | Limit Order |
+| **LS Overseas Futures** | LS Securities | Global Futures (CME, ICE...) | Limit Order |
+| **Kraken Futures** | Kraken | Crypto Perpetuals | Up to 50x leverage, Limit Order |
+| **Kraken xStocks** | Kraken | Tokenized US Equities | Fractional shares, 24/5, Limit Order |
+| **IBKR Options** | Interactive Brokers | Options | Greeks, Limit Order |
+| **IBKR Futures** | Interactive Brokers | Futures | Global markets, Limit Order |
+| **IBKR Forex** | Interactive Brokers | Forex | Currency pairs, Limit Order |
+| **IBKR Bonds** | Interactive Brokers | Fixed Income | Bond trading, Limit Order |
+| **IBKR Events** | Interactive Brokers | Event Contracts | Prediction market, Limit Order |
+
+### Coverage Summary
+
+| | Count |
+|---|---|
+| Total Plugins | 31 |
+| API Trading Plugins | 23 |
+| Limit Order Support | 23 |
+| Regions | KR, US, JP, IN, Global |
+| Asset Classes | Stocks, Crypto, Futures, Options, Forex, Bonds, Prediction Markets |
+
+---
+
+## Security
+
+- All credentials are encrypted via **Windows Credential Manager** (never stored in plain text)
+- Plugin ZIPs are verified with **SHA-256** checksums
+- Registry is signed with **Ed25519** (`registry/index.json.sig`)
+- AST-based security scan on install (no `eval`, `exec`, `subprocess`, etc.)
+
+## Repository Structure
 
 ```
 registry/
-├── index.json              ← Master plugin list (fetched by SandClaw IDE)
-└── plugins/
-    ├── upbit/icon.png
-    ├── alpaca/icon.png
-    ├── kalshi/icon.png
-    └── robinhood/icon.png
+  index.json          <- Master plugin list (fetched by SandClaw IDE)
+  index.json.sig      <- Ed25519 signature
+icons/                <- Plugin icons (PNG)
+releases/             <- Plugin ZIP packages
 ```
 
 ## For Plugin Developers
 
-Want to publish your plugin to the SandClaw Store?
-
 1. Build your plugin following the [Plugin SDK docs](https://sandclaw.io/docs/plugins)
-2. Package as ZIP: `manifest.json` + `main.py` + dependencies
-3. Open a [GitHub Issue](https://github.com/kokogo100/sandclaw/issues) with your plugin ZIP
-4. After review, your plugin will appear in the Store for all users
+2. Package as ZIP: `manifest.json` + `main.py` + modules
+3. Open a [GitHub Issue](https://github.com/kokogo100/sandclaw/issues) with your plugin
+4. After review, your plugin appears in the Store for all users
 
 ## For SandClaw Users
 
-Plugins listed here are automatically available in your SandClaw IDE Store.
-Open **Settings > Store** to browse, install, and manage plugins.
+Open **Settings > Store** in your SandClaw IDE to browse, install, and manage plugins.

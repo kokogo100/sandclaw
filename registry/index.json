@@ -1,6 +1,6 @@
 {
-  "registry_version": "1.9.0",
-  "last_updated": "2026-03-15",
+  "registry_version": "1.0.0",
+  "last_updated": "2026-03-16",
   "plugins": [
     {
       "id": "upbit",
@@ -28,13 +28,14 @@
       "capabilities_summary": [
         "search",
         "trading",
-        "realtime"
+        "realtime",
+        "Limit Order"
       ]
     },
     {
       "id": "alpaca",
       "name": "Alpaca Markets",
-      "version": "1.2.0",
+      "version": "1.0.0",
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "US",
@@ -59,7 +60,8 @@
         "search",
         "trading",
         "websocket",
-        "paper_trading"
+        "paper_trading",
+        "Limit Order"
       ]
     },
     {
@@ -175,7 +177,7 @@
     {
       "id": "ls_sec",
       "name": "LS Securities",
-      "version": "1.1.0",
+      "version": "1.0.0",
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "KR",
@@ -201,9 +203,10 @@
         "Auto Trading",
         "WebSocket",
         "Margin Trading",
-        "Real-time"
+        "Real-time",
+        "Limit Order"
       ],
-      "download_sha256": "adccee4a67c84e38a3a2813b4a4590ae5bf107351931d7130703329f8e52faaf"
+      "download_sha256": "9457dfe6210b366de3d890bc379abad773f5fded2ce537ec6a9a3a679df754d9"
     },
     {
       "id": "ls_sec_futures",
@@ -234,7 +237,8 @@
       "capabilities_summary": [
         "Auto Trading",
         "Futures",
-        "Options"
+        "Options",
+        "Limit Order"
       ],
       "download_sha256": "39189c001448623b9c90712ef369e4fb28a6ee00083ccbbc950cdba37128b33f"
     },
@@ -265,7 +269,8 @@
       "min_core_version": "1.0.0",
       "capabilities_summary": [
         "Auto Trading",
-        "US Stocks"
+        "US Stocks",
+        "Limit Order"
       ],
       "download_sha256": "d169c7b2ab11974f56f794b54861f15a462668253ae1d7ebb0ce1f90199ee25d"
     },
@@ -298,7 +303,8 @@
       "capabilities_summary": [
         "Auto Trading",
         "Global Futures",
-        "Options"
+        "Options",
+        "Limit Order"
       ],
       "download_sha256": "bf1e223de9045e397d6fbc1c78edf64bf512694b8278d6595c357c88d031bb8d"
     },
@@ -332,14 +338,15 @@
         "Auto Trading",
         "Night Trading",
         "Futures",
-        "Options"
+        "Options",
+        "Limit Order"
       ],
       "download_sha256": "ba3014550cef155458e7239a2479214c9344788282eef0325d87e1276410f48c"
     },
     {
       "id": "web_browsing_cdp",
       "name": "Web Browsing (CDP)",
-      "version": "1.1.0",
+      "version": "1.0.0",
       "vendor": "SandClaw Team",
       "plugin_type": "browser",
       "region": "GLOBAL",
@@ -366,7 +373,7 @@
     {
       "id": "sbi_sec",
       "name": "SBI Securities (SBI証券)",
-      "version": "2.0.0",
+      "version": "1.0.0",
       "vendor": "SandClaw Team",
       "plugin_type": "browser",
       "region": "JP",
@@ -459,9 +466,10 @@
         "Auto Trading",
         "WebSocket",
         "Margin Trading",
-        "Real-time"
+        "Real-time",
+        "Limit Order"
       ],
-      "download_sha256": null
+      "download_sha256": "aedf666cd6088f69f4d02b012159e58fcc8a554c914cecdec87530a8589c1e95"
     },
     {
       "id": "bitflyer",
@@ -490,7 +498,8 @@
         "Full Symbol Scan",
         "Realtime Quote",
         "Historical Data",
-        "Execution"
+        "Execution",
+        "Limit Order"
       ],
       "download_sha256": "afd727d370d3421dafbb8f2930fb476c650cab1b1bcacc6cfff9b0039b6d77d0"
     },
@@ -522,9 +531,10 @@
         "Auto Trading",
         "WebSocket",
         "Real-time",
-        "Prediction Market"
+        "Prediction Market",
+        "Limit Order"
       ],
-      "download_sha256": "198b225f755f6ada9544d5f4ab761c48077c31c158f09b1d7f882df56842a4d9"
+      "download_sha256": "ec4e1104776e96344d7ba5f66eb6fb307ed8d3b27b45fe5953b72b5ab00ce522"
     },
     {
       "id": "kis_sec",
@@ -555,7 +565,8 @@
         "Auto Trading",
         "WebSocket",
         "Margin Trading",
-        "Real-time"
+        "Real-time",
+        "Limit Order"
       ],
       "download_sha256": "43882b0c805bc3c879b54351236677cd5fbb884154a8df7111ef9030f8cb1517"
     },
@@ -588,7 +599,8 @@
         "Auto Trading",
         "WebSocket",
         "Margin Trading",
-        "Real-time"
+        "Real-time",
+        "Limit Order"
       ],
       "download_sha256": "cfcc7ba1ba65a94575b3247c58a456ce12f90b7140b5153493e89608697c772b"
     },
@@ -621,9 +633,10 @@
         "Auto Trading",
         "WebSocket",
         "Margin Trading",
-        "Paper Trading"
+        "Paper Trading",
+        "Limit Order"
       ],
-      "download_sha256": "f3d779b9acd8934d09d43f38ebd85185547272dee821b39ce8689a42b0965099"
+      "download_sha256": "f65aac9c19731a01f3987740a16bfa62f1ee3ec6e585fa52988c3c277f32081e"
     },
     {
       "id": "zerodha",
@@ -654,7 +667,8 @@
       "capabilities_summary": [
         "Auto Trading",
         "WebSocket",
-        "Margin Trading"
+        "Margin Trading",
+        "Limit Order"
       ],
       "download_sha256": "68b419ff4e8814a08a1463e25205b4669fbc1f4ed44edba4ad798281a4893412"
     },
@@ -665,7 +679,9 @@
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "US",
-      "asset_classes": ["CRYPTO"],
+      "asset_classes": [
+        "CRYPTO"
+      ],
       "description": "Kraken crypto exchange — 300+ coins, low fees, Spot trading via REST + WebSocket v2",
       "description_long": "Official REST API plugin for Kraken, a top-tier US cryptocurrency exchange. Trade 300+ coins with low fees across 5 spot markets (USD, EUR, stablecoins, crypto pairs). Features WebSocket v2 real-time streaming, orderbook depth, market scanning, and full order management. HMAC-SHA512 authentication with encrypted key storage.",
       "how_it_works": [
@@ -685,7 +701,8 @@
         "Auto Trading",
         "WebSocket",
         "Real-time",
-        "300+ Coins"
+        "300+ Coins",
+        "Limit Order"
       ],
       "download_sha256": "504e6d2e9b876b41343421927ed78676f934c53f38add89ae2589c32be29d319"
     },
@@ -696,7 +713,9 @@
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "US",
-      "asset_classes": ["CRYPTO_FUTURES"],
+      "asset_classes": [
+        "CRYPTO_FUTURES"
+      ],
       "extends": "kraken",
       "description": "Kraken Futures — Crypto perpetuals & fixed-maturity contracts via REST + WebSocket",
       "description_long": "Extension plugin for Kraken Futures trading. Supports perpetual contracts (PF_XBTUSD), fixed-maturity futures, leverage up to 50x, and real-time WebSocket feeds. Uses separate API endpoint (futures.kraken.com) with sandbox environment available for testing. Requires Kraken (Base) plugin installed.",
@@ -716,7 +735,8 @@
       "capabilities_summary": [
         "Futures",
         "Leverage",
-        "Sandbox"
+        "Sandbox",
+        "Limit Order"
       ],
       "download_sha256": "dbd9d113651e9233bc80b67413a275eb46b9d6cfcf4183aa9ed626ab2312300e"
     },
@@ -727,7 +747,9 @@
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "US",
-      "asset_classes": ["TOKENIZED_EQUITY"],
+      "asset_classes": [
+        "TOKENIZED_EQUITY"
+      ],
       "extends": "kraken",
       "description": "Kraken xStocks — Tokenized US equities (AAPL, TSLA, MSFT...) via Spot API",
       "description_long": "Extension plugin for Kraken xStocks tokenized equity trading. Trade ~70+ tokenized US stocks (AAPLxUSD, TSLAxUSD, etc.) using the same Spot API with asset_class parameter. Supports 24/5 trading, fractional shares, and real-time WebSocket updates. Requires Kraken (Base) plugin installed.",
@@ -747,7 +769,8 @@
       "capabilities_summary": [
         "Tokenized Stocks",
         "Fractional Shares",
-        "24/5 Trading"
+        "24/5 Trading",
+        "Limit Order"
       ],
       "region_notice": "xStocks (tokenized equities) may not be available in all jurisdictions. Check Kraken's supported regions for xStocks trading at kraken.com before installing.",
       "download_sha256": "895f66f8c108d41076855a924f4e682a479f56d30f9cc4bb5410b1f9a95094b1"
@@ -759,7 +782,10 @@
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "US",
-      "asset_classes": ["STOCK", "ETF"],
+      "asset_classes": [
+        "STOCK",
+        "ETF"
+      ],
       "extends": "kraken",
       "description": "Kraken Equities — 11,000+ US stocks & ETFs (API not yet available)",
       "description_long": "Placeholder for Kraken traditional equities trading. Kraken Securities (FINRA member) offers 11,000+ commission-free US stocks and ETFs, but currently only through Kraken Desktop app — no public trading API is available yet.",
@@ -787,7 +813,9 @@
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "GLOBAL",
-      "asset_classes": ["STOCK"],
+      "asset_classes": [
+        "STOCK"
+      ],
       "description": "Interactive Brokers (IBKR) — Global stock trading via Client Portal REST API. Supports 150+ markets across 33 countries.",
       "description_long": "Interactive Brokers (IBKR) is one of the world's largest electronic brokers, providing access to 150+ markets across 33 countries. IBKR does not use traditional API keys. Instead, IBKR provides a 'Client Portal Gateway' — a small Java program that runs locally on your computer (default port: 5000, fixed by IBKR). You log in via your browser, and the plugin communicates through this local Gateway. The Gateway must be running and logged in whenever you use this plugin.",
       "how_it_works": [
@@ -805,8 +833,16 @@
       "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.9.0-ibkr/ibkr-1.0.0.zip",
       "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/IBKR.png",
       "min_core_version": "1.0.0",
-      "capabilities_summary": ["Auto Trading", "Paper Trading", "WebSocket", "Real-time", "150+ Markets", "33 Countries"],
-      "download_sha256": "fb08724443ade911909558628ef1e147eb95c36b79fd698d447c3bf76d682b10"
+      "capabilities_summary": [
+        "Auto Trading",
+        "Paper Trading",
+        "WebSocket",
+        "Real-time",
+        "150+ Markets",
+        "33 Countries",
+        "Limit Order"
+      ],
+      "download_sha256": "1c397fc26f9f10887c3f583fb3fffbcaab2c6d455a2126ad212ae55902f1354f"
     },
     {
       "id": "ibkr_options",
@@ -815,7 +851,9 @@
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "GLOBAL",
-      "asset_classes": ["OPTION"],
+      "asset_classes": [
+        "OPTION"
+      ],
       "description": "IBKR Options Extension — Options chain, Greeks, and options trading via Client Portal API",
       "how_it_works": [
         "Install the Interactive Brokers (Base) plugin first",
@@ -830,8 +868,13 @@
       "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.9.0-ibkr/ibkr_options-1.0.0.zip",
       "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/IBKR.png",
       "min_core_version": "1.0.0",
-      "capabilities_summary": ["Options Chain", "Greeks", "Options Trading"],
-      "download_sha256": "f72ecafebaa176d07428ba75e0e557e2081791d6c037426e749b0731cae29055"
+      "capabilities_summary": [
+        "Options Chain",
+        "Greeks",
+        "Options Trading",
+        "Limit Order"
+      ],
+      "download_sha256": "1a1822102550a9e733abc91c58895a7cbe377b045a9a5587bac815aff9b2132d"
     },
     {
       "id": "ibkr_futures",
@@ -840,7 +883,9 @@
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "GLOBAL",
-      "asset_classes": ["FUTURES"],
+      "asset_classes": [
+        "FUTURES"
+      ],
       "description": "IBKR Futures Extension — Global futures trading (Index, Energy, Metals, Agri, Rates, FX)",
       "how_it_works": [
         "Install the Interactive Brokers (Base) plugin first",
@@ -855,8 +900,12 @@
       "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.9.0-ibkr/ibkr_futures-1.0.0.zip",
       "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/IBKR.png",
       "min_core_version": "1.0.0",
-      "capabilities_summary": ["Futures Trading", "Global Markets"],
-      "download_sha256": "bb9dfe8738d5f66c579d2d2c1551716d58eaf3f6819f379f34dc74667e52e97d"
+      "capabilities_summary": [
+        "Futures Trading",
+        "Global Markets",
+        "Limit Order"
+      ],
+      "download_sha256": "a108d500cc7f4a7ab82d93473e5cebdcd17aa3b37dd48657aa98d802cc0bb959"
     },
     {
       "id": "ibkr_forex",
@@ -865,7 +914,9 @@
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "GLOBAL",
-      "asset_classes": ["FOREX"],
+      "asset_classes": [
+        "FOREX"
+      ],
       "description": "IBKR Forex Extension — Currency pair trading (Major, Minor, Exotic)",
       "how_it_works": [
         "Install the Interactive Brokers (Base) plugin first",
@@ -880,8 +931,12 @@
       "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.9.0-ibkr/ibkr_forex-1.0.0.zip",
       "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/IBKR.png",
       "min_core_version": "1.0.0",
-      "capabilities_summary": ["Forex Trading", "Currency Pairs"],
-      "download_sha256": "cd60074bdd4fd502cccc6ca53a82d04eb1db02b54cf71ed0eb8297135bf41f02"
+      "capabilities_summary": [
+        "Forex Trading",
+        "Currency Pairs",
+        "Limit Order"
+      ],
+      "download_sha256": "55dc12c7791dadfe63d1bd39019c98a9fa53963585180811b620d999e7501405"
     },
     {
       "id": "ibkr_bonds",
@@ -890,7 +945,9 @@
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "GLOBAL",
-      "asset_classes": ["BOND"],
+      "asset_classes": [
+        "BOND"
+      ],
       "description": "IBKR Bonds Extension — Government, Corporate, and Municipal bond trading",
       "how_it_works": [
         "Install the Interactive Brokers (Base) plugin first",
@@ -905,8 +962,12 @@
       "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.9.0-ibkr/ibkr_bonds-1.0.0.zip",
       "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/IBKR.png",
       "min_core_version": "1.0.0",
-      "capabilities_summary": ["Bond Trading", "Fixed Income"],
-      "download_sha256": "488553273627aba755837b5b7a82898b420c33e91fef4c7085c062e23883d783"
+      "capabilities_summary": [
+        "Bond Trading",
+        "Fixed Income",
+        "Limit Order"
+      ],
+      "download_sha256": "808f3f4a834fc858004131298356b362d953ab0bd938a761d064efdd6b059ae7"
     },
     {
       "id": "ibkr_events",
@@ -915,7 +976,9 @@
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "US",
-      "asset_classes": ["EVENT"],
+      "asset_classes": [
+        "EVENT"
+      ],
       "description": "IBKR Event Contracts Extension — Prediction market (Politics, Economics, Weather, Sports)",
       "how_it_works": [
         "Install the Interactive Brokers (Base) plugin first",
@@ -930,8 +993,12 @@
       "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.9.0-ibkr/ibkr_events-1.0.0.zip",
       "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/IBKR.png",
       "min_core_version": "1.0.0",
-      "capabilities_summary": ["Event Contracts", "Prediction Market"],
-      "download_sha256": "4c00790f9b024590b55f78b364ef4b8086ae688b8525e6a79ef979631428082c"
+      "capabilities_summary": [
+        "Event Contracts",
+        "Prediction Market",
+        "Limit Order"
+      ],
+      "download_sha256": "d60b2c52c17465b1aa450c08c8f5e557d771ca90048494ea9cbd1b9f7a3c75e3"
     }
   ]
 }
