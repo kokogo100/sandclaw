@@ -2,6 +2,9 @@ name: Sign Registry
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   sign:
     runs-on: ubuntu-latest
