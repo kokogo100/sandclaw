@@ -1,5 +1,5 @@
 {
-  "registry_version": "1.0.0",
+  "registry_version": "2.0.0",
   "last_updated": "2026-03-16",
   "plugins": [
     {
@@ -177,7 +177,7 @@
     {
       "id": "ls_sec",
       "name": "LS Securities",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "KR",
@@ -196,7 +196,7 @@
       "bundled": false,
       "is_base": true,
       "credential_group": "ls_securities",
-      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.1.0-ls/ls_sec-v1.1.0.zip",
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v2.0.0-stability/ls_sec-v1.1.0.zip",
       "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/LS.png",
       "min_core_version": "1.0.0",
       "capabilities_summary": [
@@ -206,7 +206,7 @@
         "Real-time",
         "Limit Order"
       ],
-      "download_sha256": "9457dfe6210b366de3d890bc379abad773f5fded2ce537ec6a9a3a679df754d9"
+      "download_sha256": "b9c1027883dc4702a89317a2ad38b514dcc8f4539382357bc436e3772019daef"
     },
     {
       "id": "ls_sec_futures",
@@ -475,7 +475,7 @@
     {
       "id": "bitflyer",
       "name": "bitFlyer Lightning",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "JP",
@@ -493,7 +493,7 @@
       "testing_notice": "開発者が日本居住者ではないため、実際の口座でテストできていません。問題があればGitHub Issuesでフィードバックをお願いします。",
       "bundled": false,
       "is_base": true,
-      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.8.0-bitflyer/bitflyer-1.0.0.zip",
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v2.0.0-stability/bitflyer-v1.1.0.zip",
       "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/bitFlyer.png",
       "min_core_version": "1.0.0",
       "capabilities_summary": [
@@ -503,7 +503,7 @@
         "Execution",
         "Limit Order"
       ],
-      "download_sha256": "afd727d370d3421dafbb8f2930fb476c650cab1b1bcacc6cfff9b0039b6d77d0"
+      "download_sha256": "fcabccef7e2aca9c16a2d389db436360deaebd36feae5e6a5d15d8d197573a41"
     },
     {
       "id": "kalshi_api",
@@ -541,7 +541,7 @@
     {
       "id": "kis_sec",
       "name": "한국투자증권",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "KR",
@@ -560,7 +560,7 @@
       "bundled": false,
       "is_base": true,
       "credential_group": "kis_securities",
-      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.5.0-kr-in/kis_sec-v1.0.0.zip",
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v2.0.0-stability/kis_sec-v1.1.0.zip",
       "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/KIS.png",
       "min_core_version": "1.0.0",
       "capabilities_summary": [
@@ -570,12 +570,12 @@
         "Real-time",
         "Limit Order"
       ],
-      "download_sha256": "43882b0c805bc3c879b54351236677cd5fbb884154a8df7111ef9030f8cb1517"
+      "download_sha256": "56c32796bcc368bcc8a4876deb375c2d3b3d14f37865374b65feebe13c78e3c3"
     },
     {
       "id": "angel_one",
       "name": "Angel One (SmartAPI)",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "IN",
@@ -595,7 +595,7 @@
       "testing_notice": "개발자가 인도 거주자가 아니어서 실제 계좌로 테스트하지 못했습니다. 사용 중 문제가 있으면 GitHub Issues로 피드백 부탁드립니다.",
       "bundled": false,
       "is_base": true,
-      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.5.0-kr-in/angel_one-v1.0.0.zip",
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v2.0.0-stability/angel_one-v1.1.0.zip",
       "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/angel_one.png",
       "min_core_version": "1.0.0",
       "capabilities_summary": [
@@ -605,7 +605,7 @@
         "Real-time",
         "Limit Order"
       ],
-      "download_sha256": "cfcc7ba1ba65a94575b3247c58a456ce12f90b7140b5153493e89608697c772b"
+      "download_sha256": "beda3b450c9e1f4852f6ca6ce97a9d3287177ef0feefcff51798e5f535ffd5ae"
     },
     {
       "id": "upstox",
@@ -645,7 +645,7 @@
     {
       "id": "zerodha",
       "name": "Zerodha (Kite Connect)",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "IN",
@@ -666,7 +666,7 @@
       "testing_notice": "개발자가 인도 거주자가 아니어서 실제 계좌로 테스트하지 못했습니다. 사용 중 문제가 있으면 GitHub Issues로 피드백 부탁드립니다.",
       "bundled": false,
       "is_base": true,
-      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.5.0-kr-in/zerodha-v1.0.0.zip",
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v2.0.0-stability/zerodha-v1.1.0.zip",
       "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/zerodha.png",
       "min_core_version": "1.0.0",
       "capabilities_summary": [
@@ -675,12 +675,12 @@
         "Margin Trading",
         "Limit Order"
       ],
-      "download_sha256": "68b419ff4e8814a08a1463e25205b4669fbc1f4ed44edba4ad798281a4893412"
+      "download_sha256": "44b60ee71c30818911a9965b94950761fa46378190b06870f9a5b6ae8c6cd5b8"
     },
     {
       "id": "kraken",
       "name": "Kraken (Base)",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "US",
@@ -699,7 +699,7 @@
       "bundled": false,
       "is_base": true,
       "credential_group": "kraken",
-      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.7.0-kraken/kraken-1.0.0.zip",
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v2.0.0-stability/kraken-v1.1.0.zip",
       "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/Kraken.png",
       "min_core_version": "2.0.0",
       "capabilities_summary": [
@@ -709,12 +709,12 @@
         "300+ Coins",
         "Limit Order"
       ],
-      "download_sha256": "504e6d2e9b876b41343421927ed78676f934c53f38add89ae2589c32be29d319"
+      "download_sha256": "97bd62c78aa0a0b568772be99af0951e0a32126639a47e5943719750244e7c0a"
     },
     {
       "id": "kraken_futures",
       "name": "Kraken Futures",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "US",
@@ -734,7 +734,7 @@
       "bundled": false,
       "is_base": false,
       "credential_group": "kraken",
-      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.7.0-kraken/kraken_futures-1.0.0.zip",
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v2.0.0-stability/kraken_futures-v1.1.0.zip",
       "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/Kraken.png",
       "min_core_version": "2.0.0",
       "capabilities_summary": [
@@ -743,12 +743,12 @@
         "Sandbox",
         "Limit Order"
       ],
-      "download_sha256": "dbd9d113651e9233bc80b67413a275eb46b9d6cfcf4183aa9ed626ab2312300e"
+      "download_sha256": "1f861fa688ca509c9247ea41f3fe28382e4dd2413855f29d6486b390177e566c"
     },
     {
       "id": "kraken_xstocks",
       "name": "Kraken xStocks",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "US",
@@ -768,7 +768,7 @@
       "bundled": false,
       "is_base": false,
       "credential_group": "kraken",
-      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.7.0-kraken/kraken_xstocks-1.0.0.zip",
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v2.0.0-stability/kraken_xstocks-v1.1.0.zip",
       "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/Kraken.png",
       "min_core_version": "2.0.0",
       "capabilities_summary": [
@@ -778,7 +778,7 @@
         "Limit Order"
       ],
       "region_notice": "xStocks (tokenized equities) may not be available in all jurisdictions. Check Kraken's supported regions for xStocks trading at kraken.com before installing.",
-      "download_sha256": "895f66f8c108d41076855a924f4e682a479f56d30f9cc4bb5410b1f9a95094b1"
+      "download_sha256": "0b0cff403c282568fd6a3fe3a99da8ce6c93678ac354be17add41caa3aecdffa"
     },
     {
       "id": "kraken_equities",
