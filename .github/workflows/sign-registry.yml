@@ -18,7 +18,36 @@ jobs:
       - name: Sign registry
         env:
           REGISTRY_SIGNING_KEY: ${{ secrets.REGISTRY_SIGNING_KEY }}
-        run: python tools/sign_registry.py
+        run: |
+          python -c "
+          import json, base64, hashlib
+          from nacl.signing import SigningKey
+          import os
+
+          key_b64 = os.environ['REGISTRY_SIGNING_KEY']
+          signing_key = SigningKey(base64.b64decode(key_b64))
+
+          with open('registry/index.json', 'rb') as f:
+              content = f.read()
+          content = content.replace(b'\r\n', b'\n')
+
+          signed = signing_key.sign(content)
+          signature = base64.b64encode(signed.signature).decode()
+          content_hash = hashlib.sha256(content).hexdigest()
+
+          sig = {
+              'signature': signature,
+              'algorithm': 'ed25519',
+              'signed_bytes': len(content),
+              'content_sha256': content_hash,
+          }
+          with open('registry/index.json.sig', 'w') as f:
+              json.dump(sig, f, indent=2)
+
+          print(f'Signed registry ({len(content)} bytes)')
+          print(f'  SHA-256: {content_hash[:32]}...')
+          print(f'  Signature: {signature[:32]}...')
+          "
       
       - name: Commit signature
         run: |
