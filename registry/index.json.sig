@@ -1,6 +1,6 @@
 {
-  "signature": "eQ5i6WzBCxaGdjFz0tw+dMtRxJ6Tf1ztjrWmE8aUnHbZf5bQHxN68hdMNnPD/3Kk2Z+5IlhaLvk8REpYxGhaCg==",
+  "signature": "RP42wbNKERQNGgmeroLSJa6OkJ9gsAjYquSeVgfJFAAa+D5SxZ+cyqi+gJMSJ87SzGM90yw4z2Nn0ThRR0HBCw==",
   "algorithm": "ed25519",
-  "signed_bytes": 50549,
-  "content_sha256": "9e44fa2c0d7b6b9c71d9c00b09260566cb685374cd95e35b631ea729b125e1ce"
+  "signed_bytes": 50582,
+  "content_sha256": "fb900ba23d70b60a2ab108258abdb6ec81fea12e93a972c6f60e0732cc6d03cb"
 }
