@@ -351,7 +351,7 @@
     {
       "id": "web_browsing_cdp",
       "name": "Web Browsing (CDP)",
-      "version": "1.0.0",
+      "version": "1.2.0",
       "vendor": "SandClaw Team",
       "plugin_type": "browser",
       "region": "GLOBAL",
@@ -366,19 +366,20 @@
       ],
       "auth_note": "No credentials needed. Uses your existing Chrome browser session.",
       "bundled": false,
-      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.2.0-cdp/web_browsing_cdp-1.1.0.zip",
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v2.2.0-ohlcv/web_browsing_cdp-v1.2.0.zip",
       "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/web_browsing.png",
       "min_core_version": "1.0.0",
       "capabilities_summary": [
         "search",
         "browser"
       ],
-      "download_sha256": "23634b74f220d40414a8487874b28b324da39bf6939ba849c419ff8fcf006f7e"
+      "download_sha256": "23634b74f220d40414a8487874b28b324da39bf6939ba849c419ff8fcf006f7e",
+      "sha256": "3bd06a2f930d8fcd9f4df78ac3a75be47679a019d3ff7525dc1d7079573d1438"
     },
     {
       "id": "sbi_sec",
       "name": "SBI Securities (SBI証券)",
-      "version": "1.0.0",
+      "version": "2.1.0",
       "vendor": "SandClaw Team",
       "plugin_type": "browser",
       "region": "JP",
@@ -398,7 +399,7 @@
       ],
       "auth_note": "No credentials stored. Your login session stays in your browser. SandClaw never sees your password.",
       "bundled": false,
-      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.2.0-cdp/sbi_sec-2.0.0.zip",
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v2.2.0-ohlcv/sbi_sec-v2.1.0.zip",
       "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/SBI.png",
       "min_core_version": "1.0.0",
       "capabilities_summary": [
@@ -406,12 +407,13 @@
         "trading",
         "browser"
       ],
-      "download_sha256": "75e6d33e7272df84c55f086608b4ae9fa009e8595e7d0a53296db2f2dbd76ec2"
+      "download_sha256": "75e6d33e7272df84c55f086608b4ae9fa009e8595e7d0a53296db2f2dbd76ec2",
+      "sha256": "8951818bbd2dad159e1aac4973e939c21e76f0980317efe70982c722273fadb8"
     },
     {
       "id": "rakuten_sec",
       "name": "Rakuten Securities (楽天証券)",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "vendor": "SandClaw Team",
       "plugin_type": "browser",
       "region": "JP",
@@ -430,7 +432,7 @@
       ],
       "auth_note": "No credentials stored. Your login session stays in your browser. SandClaw never sees your password.",
       "bundled": false,
-      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.2.0-cdp/rakuten_sec-1.0.0.zip",
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v2.2.0-ohlcv/rakuten_sec-v1.1.0.zip",
       "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/Rakuten.png",
       "min_core_version": "1.0.0",
       "capabilities_summary": [
@@ -438,12 +440,13 @@
         "trading",
         "browser"
       ],
-      "download_sha256": "850cb4e9d166fe3af93fe32b90437f3cf4a5141f5aa78a08077d511c51e5b792"
+      "download_sha256": "850cb4e9d166fe3af93fe32b90437f3cf4a5141f5aa78a08077d511c51e5b792",
+      "sha256": "65d5237703ae06fa1b8f67ba873daa187d26da82bdff86af2bc140372fcc1c52"
     },
     {
       "id": "kabu_jp",
       "name": "kabu STATION",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "JP",
@@ -462,7 +465,7 @@
       "testing_notice": "開発者が日本居住者ではないため、実際の口座でテストできていません。問題があればGitHub Issuesでフィードバックをお願いします。",
       "bundled": false,
       "is_base": true,
-      "download_url": null,
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v2.2.0-ohlcv/kabu_jp-v1.1.0.zip",
       "restriction_notice": "kabu STATION API の利用規約により、Store からの自動インストールはできません。\n\n手動でダウンロードして ~/.sandclaw/plugins/ に配置すれば利用可能です。\n\n※ kabucom からテスト環境の提供を受けられなかったため、実環境での十分なテストが行えていません。不具合がありましたら GitHub Issue でご報告ください — フィードバックに基づいてアップデートを提供いたします。",
       "manual_download_url": "https://github.com/kokogo100/sandclaw/releases/tag/v1.3.0-kabu",
       "restriction_proof_image": "kabu.png",
@@ -475,7 +478,8 @@
         "Real-time",
         "Limit Order"
       ],
-      "download_sha256": "aedf666cd6088f69f4d02b012159e58fcc8a554c914cecdec87530a8589c1e95"
+      "download_sha256": "aedf666cd6088f69f4d02b012159e58fcc8a554c914cecdec87530a8589c1e95",
+      "sha256": "c148bc6f9368c7d2c0793f8286de8d3a50d4fdc4146f9f2c721ecaf245749441"
     },
     {
       "id": "bitflyer",
