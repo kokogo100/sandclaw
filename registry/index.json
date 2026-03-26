@@ -1,6 +1,6 @@
 {
-  "registry_version": "2.0.0",
-  "last_updated": "2026-03-16",
+  "registry_version": "2.0.1",
+  "last_updated": "2026-03-26",
   "plugins": [
     {
       "id": "upbit",
@@ -21,16 +21,16 @@
         "Activate and start trading via chatbot or auto-trading engine"
       ],
       "auth_note": "API Keys are encrypted and stored using Windows Credential Manager. Never stored in plain text.",
-      "bundled": true,
-      "download_url": null,
+      "bundled": false,
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v2.0.1-store-rebuild/upbit-v2.0.1.zip",
       "icon_url": null,
       "min_core_version": "1.0.0",
       "capabilities_summary": [
         "search",
         "trading",
-        "realtime",
-        "Limit Order"
-      ]
+        "realtime"
+      ],
+      "download_sha256": "3205500ebc4ecef8d67ba133a979f8c6f02dea8ddaebb467b6df5d47b3ebd919"
     },
     {
       "id": "alpaca",
@@ -52,45 +52,17 @@
         "Select markets to scan in Strategy Editor and start auto-trading"
       ],
       "auth_note": "Paper Trading keys are provided by default for risk-free testing. Keys are encrypted and stored securely.",
-      "bundled": true,
-      "download_url": null,
+      "bundled": false,
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v2.0.1-store-rebuild/alpaca-v2.0.1.zip",
       "icon_url": null,
       "min_core_version": "1.0.0",
       "capabilities_summary": [
         "search",
         "trading",
         "websocket",
-        "paper_trading",
-        "Limit Order"
-      ]
-    },
-    {
-      "id": "mock",
-      "name": "Mock Broker",
-      "version": "1.0.0",
-      "vendor": "SandClaw Team",
-      "plugin_type": "api",
-      "region": "Test",
-      "asset_classes": [
-        "STOCK",
-        "CRYPTO"
+        "paper_trading"
       ],
-      "description": "Mock Broker for testing — No real money",
-      "description_long": "A virtual broker for development and testing. Test your trading strategies with simulated data without connecting to a real exchange. Ready to use immediately with the built-in test keys (mock_api_key / mock_secret_key).",
-      "how_it_works": [
-        "Enter the default test keys: mock_api_key / mock_secret_key",
-        "Activate and test with virtual symbols like MOCK-BTC, MOCK-ETH",
-        "Switch to a real broker once your strategy is ready"
-      ],
-      "auth_note": "Test-only. No real funds are used.",
-      "bundled": true,
-      "download_url": null,
-      "icon_url": null,
-      "min_core_version": "1.0.0",
-      "capabilities_summary": [
-        "search",
-        "trading"
-      ]
+      "download_sha256": "948847647e38998bc89f54022ee03aac81b128d2abc4251f26172a55997dcf33"
     },
     {
       "id": "kalshi",
@@ -110,15 +82,16 @@
         "Activate this plugin — it connects via CDP automatically"
       ],
       "auth_note": "No credentials stored. Your login session stays in your browser. SandClaw never sees your password.",
-      "bundled": true,
-      "download_url": null,
+      "bundled": false,
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v2.0.1-store-rebuild/kalshi-v2.0.1.zip",
       "icon_url": null,
       "min_core_version": "1.0.0",
       "capabilities_summary": [
         "search",
         "trading",
         "browser"
-      ]
+      ],
+      "download_sha256": "8ff6cd5350197ea216b16866e699b32cb5e170723c31678239716f8747c7b06b"
     },
     {
       "id": "robinhood",
@@ -140,15 +113,16 @@
         "Activate this plugin — it connects via CDP automatically"
       ],
       "auth_note": "No credentials stored. Your login session stays in your browser. SandClaw never sees your password.",
-      "bundled": true,
-      "download_url": null,
+      "bundled": false,
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v2.0.1-store-rebuild/robinhood-v2.0.1.zip",
       "icon_url": null,
       "min_core_version": "1.0.0",
       "capabilities_summary": [
         "search",
         "trading",
         "browser"
-      ]
+      ],
+      "download_sha256": "d50b26f838b3f08d88bceffa2e2ed11329b75d981b3327aa35421411f6189ca3"
     },
     {
       "id": "web_search",
@@ -177,7 +151,7 @@
     {
       "id": "ls_sec",
       "name": "LS Securities",
-      "version": "1.2.0",
+      "version": "1.1.0",
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "KR",
@@ -196,23 +170,21 @@
       "bundled": false,
       "is_base": true,
       "credential_group": "ls_securities",
-      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v2.2.0-ohlcv/ls_sec-v1.2.0.zip",
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.1.0-ls/ls_sec-v1.1.0.zip",
       "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/LS.png",
       "min_core_version": "1.0.0",
       "capabilities_summary": [
         "Auto Trading",
         "WebSocket",
         "Margin Trading",
-        "Real-time",
-        "Limit Order"
+        "Real-time"
       ],
-      "download_sha256": "b9c1027883dc4702a89317a2ad38b514dcc8f4539382357bc436e3772019daef",
-      "sha256": "58e26c89ac7e3c9d14b5c6a8479e9509f0adebf0feefeb17626a27510bb1a555"
+      "download_sha256": "adccee4a67c84e38a3a2813b4a4590ae5bf107351931d7130703329f8e52faaf"
     },
     {
       "id": "ls_sec_futures",
       "name": "LS Securities Futures",
-      "version": "1.1.0",
+      "version": "1.0.0",
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "KR",
@@ -232,22 +204,20 @@
       "extends": "ls_sec",
       "is_base": false,
       "credential_group": "ls_securities",
-      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v2.2.0-ohlcv/ls_sec_futures-v1.1.0.zip",
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.1.0-ls/ls_sec_futures-v1.0.0.zip",
       "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/LS.png",
       "min_core_version": "1.0.0",
       "capabilities_summary": [
         "Auto Trading",
         "Futures",
-        "Options",
-        "Limit Order"
+        "Options"
       ],
-      "download_sha256": "39189c001448623b9c90712ef369e4fb28a6ee00083ccbbc950cdba37128b33f",
-      "sha256": "7adc717849cbb817c3263c924e688c159f387a3659c2e0873b2b362833ef53fc"
+      "download_sha256": "39189c001448623b9c90712ef369e4fb28a6ee00083ccbbc950cdba37128b33f"
     },
     {
       "id": "ls_sec_overseas",
       "name": "LS Securities Overseas",
-      "version": "1.1.0",
+      "version": "1.0.0",
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "US",
@@ -266,21 +236,19 @@
       "extends": "ls_sec",
       "is_base": false,
       "credential_group": "ls_securities",
-      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v2.2.0-ohlcv/ls_sec_overseas-v1.1.0.zip",
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.1.0-ls/ls_sec_overseas-v1.0.0.zip",
       "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/LS.png",
       "min_core_version": "1.0.0",
       "capabilities_summary": [
         "Auto Trading",
-        "US Stocks",
-        "Limit Order"
+        "US Stocks"
       ],
-      "download_sha256": "d169c7b2ab11974f56f794b54861f15a462668253ae1d7ebb0ce1f90199ee25d",
-      "sha256": "204daaadd9df1fb2c8632e4a641415fb30aae790542dbbb12538fc937fcad95b"
+      "download_sha256": "d169c7b2ab11974f56f794b54861f15a462668253ae1d7ebb0ce1f90199ee25d"
     },
     {
       "id": "ls_sec_overseas_futures",
       "name": "LS Securities Overseas Futures",
-      "version": "1.1.0",
+      "version": "1.0.0",
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "GLOBAL",
@@ -300,22 +268,20 @@
       "extends": "ls_sec",
       "is_base": false,
       "credential_group": "ls_securities",
-      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v2.2.0-ohlcv/ls_sec_overseas_futures-v1.1.0.zip",
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.1.0-ls/ls_sec_overseas_futures-v1.0.0.zip",
       "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/LS.png",
       "min_core_version": "1.0.0",
       "capabilities_summary": [
         "Auto Trading",
         "Global Futures",
-        "Options",
-        "Limit Order"
+        "Options"
       ],
-      "download_sha256": "bf1e223de9045e397d6fbc1c78edf64bf512694b8278d6595c357c88d031bb8d",
-      "sha256": "317ed1bf571c9c260c98c2f3cbf2a55e2b2f271a57e67078ce197b7af92bb264"
+      "download_sha256": "bf1e223de9045e397d6fbc1c78edf64bf512694b8278d6595c357c88d031bb8d"
     },
     {
       "id": "ls_sec_night",
       "name": "LS Securities KRX Night Derivatives",
-      "version": "1.1.0",
+      "version": "1.0.0",
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "KR",
@@ -335,23 +301,21 @@
       "extends": "ls_sec",
       "is_base": false,
       "credential_group": "ls_securities",
-      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v2.2.0-ohlcv/ls_sec_night-v1.1.0.zip",
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.1.0-ls/ls_sec_night-v1.0.0.zip",
       "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/LS.png",
       "min_core_version": "1.0.0",
       "capabilities_summary": [
         "Auto Trading",
         "Night Trading",
         "Futures",
-        "Options",
-        "Limit Order"
+        "Options"
       ],
-      "download_sha256": "ba3014550cef155458e7239a2479214c9344788282eef0325d87e1276410f48c",
-      "sha256": "d039deb505d90e8c4badeba966d6871aee69b2a87d9a49237c616cdc2fd8db3f"
+      "download_sha256": "ba3014550cef155458e7239a2479214c9344788282eef0325d87e1276410f48c"
     },
     {
       "id": "web_browsing_cdp",
       "name": "Web Browsing (CDP)",
-      "version": "1.2.0",
+      "version": "1.1.0",
       "vendor": "SandClaw Team",
       "plugin_type": "browser",
       "region": "GLOBAL",
@@ -366,20 +330,19 @@
       ],
       "auth_note": "No credentials needed. Uses your existing Chrome browser session.",
       "bundled": false,
-      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v2.2.0-ohlcv/web_browsing_cdp-v1.2.0.zip",
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.2.0-cdp/web_browsing_cdp-1.1.0.zip",
       "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/web_browsing.png",
       "min_core_version": "1.0.0",
       "capabilities_summary": [
         "search",
         "browser"
       ],
-      "download_sha256": "23634b74f220d40414a8487874b28b324da39bf6939ba849c419ff8fcf006f7e",
-      "sha256": "3bd06a2f930d8fcd9f4df78ac3a75be47679a019d3ff7525dc1d7079573d1438"
+      "download_sha256": "23634b74f220d40414a8487874b28b324da39bf6939ba849c419ff8fcf006f7e"
     },
     {
       "id": "sbi_sec",
       "name": "SBI Securities (SBI証券)",
-      "version": "2.1.0",
+      "version": "2.0.0",
       "vendor": "SandClaw Team",
       "plugin_type": "browser",
       "region": "JP",
@@ -399,7 +362,7 @@
       ],
       "auth_note": "No credentials stored. Your login session stays in your browser. SandClaw never sees your password.",
       "bundled": false,
-      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v2.2.0-ohlcv/sbi_sec-v2.1.0.zip",
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.2.0-cdp/sbi_sec-2.0.0.zip",
       "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/SBI.png",
       "min_core_version": "1.0.0",
       "capabilities_summary": [
@@ -407,13 +370,12 @@
         "trading",
         "browser"
       ],
-      "download_sha256": "75e6d33e7272df84c55f086608b4ae9fa009e8595e7d0a53296db2f2dbd76ec2",
-      "sha256": "8951818bbd2dad159e1aac4973e939c21e76f0980317efe70982c722273fadb8"
+      "download_sha256": "75e6d33e7272df84c55f086608b4ae9fa009e8595e7d0a53296db2f2dbd76ec2"
     },
     {
       "id": "rakuten_sec",
       "name": "Rakuten Securities (楽天証券)",
-      "version": "1.1.0",
+      "version": "1.0.0",
       "vendor": "SandClaw Team",
       "plugin_type": "browser",
       "region": "JP",
@@ -432,7 +394,7 @@
       ],
       "auth_note": "No credentials stored. Your login session stays in your browser. SandClaw never sees your password.",
       "bundled": false,
-      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v2.2.0-ohlcv/rakuten_sec-v1.1.0.zip",
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.2.0-cdp/rakuten_sec-1.0.0.zip",
       "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/Rakuten.png",
       "min_core_version": "1.0.0",
       "capabilities_summary": [
@@ -440,13 +402,12 @@
         "trading",
         "browser"
       ],
-      "download_sha256": "850cb4e9d166fe3af93fe32b90437f3cf4a5141f5aa78a08077d511c51e5b792",
-      "sha256": "65d5237703ae06fa1b8f67ba873daa187d26da82bdff86af2bc140372fcc1c52"
+      "download_sha256": "850cb4e9d166fe3af93fe32b90437f3cf4a5141f5aa78a08077d511c51e5b792"
     },
     {
       "id": "kabu_jp",
       "name": "kabu STATION",
-      "version": "1.1.0",
+      "version": "1.0.0",
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "JP",
@@ -462,10 +423,9 @@
         "チャットで「トヨタ 現在値」等で即時利用可能"
       ],
       "auth_note": "kabu STATIONデスクトップアプリがPCで起動中であることが必要です。パスワードはWindows Credential Managerに暗号化保存されます。",
-      "testing_notice": "開発者が日本居住者ではないため、実際の口座でテストできていません。問題があればGitHub Issuesでフィードバックをお願いします。",
       "bundled": false,
       "is_base": true,
-      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v2.2.0-ohlcv/kabu_jp-v1.1.0.zip",
+      "download_url": null,
       "restriction_notice": "kabu STATION API の利用規約により、Store からの自動インストールはできません。\n\n手動でダウンロードして ~/.sandclaw/plugins/ に配置すれば利用可能です。\n\n※ kabucom からテスト環境の提供を受けられなかったため、実環境での十分なテストが行えていません。不具合がありましたら GitHub Issue でご報告ください — フィードバックに基づいてアップデートを提供いたします。",
       "manual_download_url": "https://github.com/kokogo100/sandclaw/releases/tag/v1.3.0-kabu",
       "restriction_proof_image": "kabu.png",
@@ -475,16 +435,14 @@
         "Auto Trading",
         "WebSocket",
         "Margin Trading",
-        "Real-time",
-        "Limit Order"
+        "Real-time"
       ],
-      "download_sha256": "aedf666cd6088f69f4d02b012159e58fcc8a554c914cecdec87530a8589c1e95",
-      "sha256": "c148bc6f9368c7d2c0793f8286de8d3a50d4fdc4146f9f2c721ecaf245749441"
+      "download_sha256": null
     },
     {
       "id": "bitflyer",
       "name": "bitFlyer Lightning",
-      "version": "1.1.0",
+      "version": "1.0.0",
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "JP",
@@ -499,26 +457,23 @@
         "チャットで「BTC現在値」等で即時利用可能"
       ],
       "auth_note": "API KeyとAPI SecretはWindows Credential Managerに暗号化保存されます。",
-      "testing_notice": "開発者が日本居住者ではないため、実際の口座でテストできていません。問題があればGitHub Issuesでフィードバックをお願いします。",
       "bundled": false,
       "is_base": true,
-      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v2.2.0-ohlcv/bitflyer-v1.1.0.zip",
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v2.0.1-store-rebuild/bitflyer-v2.0.1.zip",
       "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/bitFlyer.png",
       "min_core_version": "1.0.0",
       "capabilities_summary": [
         "Full Symbol Scan",
         "Realtime Quote",
         "Historical Data",
-        "Execution",
-        "Limit Order"
+        "Execution"
       ],
-      "download_sha256": "fcabccef7e2aca9c16a2d389db436360deaebd36feae5e6a5d15d8d197573a41",
-      "sha256": "fc697bf445190fdeabf91561b561c45136869dbb1c9d7f1f258700801f644fef"
+      "download_sha256": "9e4655630161a187ac9e0e4fa629859c8db11367b4f9a926dfb4b8913c127595"
     },
     {
       "id": "kalshi_api",
       "name": "Kalshi (API)",
-      "version": "1.1.0",
+      "version": "1.0.0",
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "US",
@@ -536,23 +491,21 @@
       "auth_note": "RSA Private Key is encrypted and stored using Windows Credential Manager. Dual persistence (Keyring + encrypted file). Never transmitted in plain text.",
       "bundled": false,
       "is_base": true,
-      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v2.2.0-ohlcv/kalshi_api-v1.1.0.zip",
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.4.0-kalshi/kalshi_api-1.0.0.zip",
       "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/Kalshi.png",
       "min_core_version": "1.0.0",
       "capabilities_summary": [
         "Auto Trading",
         "WebSocket",
         "Real-time",
-        "Prediction Market",
-        "Limit Order"
+        "Prediction Market"
       ],
-      "download_sha256": "ec4e1104776e96344d7ba5f66eb6fb307ed8d3b27b45fe5953b72b5ab00ce522",
-      "sha256": "333dc533c631c6542e435b1a51c342b286b0ceedb865faec596a8be08975661a"
+      "download_sha256": "198b225f755f6ada9544d5f4ab761c48077c31c158f09b1d7f882df56842a4d9"
     },
     {
       "id": "kis_sec",
       "name": "한국투자증권",
-      "version": "1.1.0",
+      "version": "1.0.0",
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "KR",
@@ -571,23 +524,21 @@
       "bundled": false,
       "is_base": true,
       "credential_group": "kis_securities",
-      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v2.2.0-ohlcv/kis_sec-v1.1.0.zip",
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.5.0-kr-in/kis_sec-v1.0.0.zip",
       "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/KIS.png",
       "min_core_version": "1.0.0",
       "capabilities_summary": [
         "Auto Trading",
         "WebSocket",
         "Margin Trading",
-        "Real-time",
-        "Limit Order"
+        "Real-time"
       ],
-      "download_sha256": "56c32796bcc368bcc8a4876deb375c2d3b3d14f37865374b65feebe13c78e3c3",
-      "sha256": "bdce71c727a8951db4e4eefce5fbe78dfdc2ed31c83e9f92d73eccd6c9f61ac1"
+      "download_sha256": "43882b0c805bc3c879b54351236677cd5fbb884154a8df7111ef9030f8cb1517"
     },
     {
       "id": "angel_one",
       "name": "Angel One (SmartAPI)",
-      "version": "1.1.0",
+      "version": "1.0.0",
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "IN",
@@ -604,26 +555,23 @@
         "Click 'TEST CONNECTION' — the plugin auto-generates TOTP and logs in via JWT"
       ],
       "auth_note": "Fully automated login using TOTP (pyotp). No browser redirect needed. Session expires daily at midnight IST; auto-refreshed via JWT refresh token.",
-      "testing_notice": "개발자가 인도 거주자가 아니어서 실제 계좌로 테스트하지 못했습니다. 사용 중 문제가 있으면 GitHub Issues로 피드백 부탁드립니다.",
       "bundled": false,
       "is_base": true,
-      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v2.2.0-ohlcv/angel_one-v1.1.0.zip",
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v2.0.1-store-rebuild/angel_one-v2.0.1.zip",
       "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/angel_one.png",
       "min_core_version": "1.0.0",
       "capabilities_summary": [
         "Auto Trading",
         "WebSocket",
         "Margin Trading",
-        "Real-time",
-        "Limit Order"
+        "Real-time"
       ],
-      "download_sha256": "beda3b450c9e1f4852f6ca6ce97a9d3287177ef0feefcff51798e5f535ffd5ae",
-      "sha256": "1731faeded434527008c2d24a09a57f771272a769a360901727e373955841a9f"
+      "download_sha256": "324a963af1ea1a9befdba3f94f6deaf9f2c48afe0b3547c27ca2918e6885be0c"
     },
     {
       "id": "upstox",
       "name": "Upstox",
-      "version": "1.1.0",
+      "version": "1.0.0",
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "IN",
@@ -640,26 +588,23 @@
         "Click 'TEST CONNECTION' — authorize via browser redirect to complete OAuth"
       ],
       "auth_note": "OAuth 2.0 Authorization Code flow. Access tokens are valid for one trading day. Re-authorize each morning if needed.",
-      "testing_notice": "개발자가 인도 거주자가 아니어서 실제 계좌로 테스트하지 못했습니다. 사용 중 문제가 있으면 GitHub Issues로 피드백 부탁드립니다.",
       "bundled": false,
       "is_base": true,
-      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v2.2.0-ohlcv/upstox-v1.1.0.zip",
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v2.0.1-store-rebuild/upstox-v2.0.1.zip",
       "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/upstox.png",
       "min_core_version": "1.0.0",
       "capabilities_summary": [
         "Auto Trading",
         "WebSocket",
         "Margin Trading",
-        "Paper Trading",
-        "Limit Order"
+        "Paper Trading"
       ],
-      "download_sha256": "f65aac9c19731a01f3987740a16bfa62f1ee3ec6e585fa52988c3c277f32081e",
-      "sha256": "d08bd4e582bceb8c29419467ebda801f780567129ac1290f28f25368d9ff8055"
+      "download_sha256": "49c72456b2848b67479b2c52c40aebc9faa47d239936cc89e8feaa1aa23555d0"
     },
     {
       "id": "zerodha",
       "name": "Zerodha (Kite Connect)",
-      "version": "1.1.0",
+      "version": "1.0.0",
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "IN",
@@ -677,25 +622,22 @@
         "Paste the request_token in SandClaw and click 'TEST CONNECTION'"
       ],
       "auth_note": "OAuth-like flow with SHA-256 checksum verification. Access tokens expire daily at 6:00 AM IST — you must re-login via Kite redirect each trading day.",
-      "testing_notice": "개발자가 인도 거주자가 아니어서 실제 계좌로 테스트하지 못했습니다. 사용 중 문제가 있으면 GitHub Issues로 피드백 부탁드립니다.",
       "bundled": false,
       "is_base": true,
-      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v2.2.0-ohlcv/zerodha-v1.1.0.zip",
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v2.0.1-store-rebuild/zerodha-v2.0.1.zip",
       "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/zerodha.png",
       "min_core_version": "1.0.0",
       "capabilities_summary": [
         "Auto Trading",
         "WebSocket",
-        "Margin Trading",
-        "Limit Order"
+        "Margin Trading"
       ],
-      "download_sha256": "44b60ee71c30818911a9965b94950761fa46378190b06870f9a5b6ae8c6cd5b8",
-      "sha256": "965c09e39181d4cb02f45ee68d35f98777dac949d8f0ae5d7decc3a5c10cea14"
+      "download_sha256": "ebbc1d76d79ddd30978b5e194afe496a1832f7432de37b3f633406a75db06128"
     },
     {
       "id": "kraken",
       "name": "Kraken (Base)",
-      "version": "1.1.0",
+      "version": "1.0.0",
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "US",
@@ -714,23 +656,21 @@
       "bundled": false,
       "is_base": true,
       "credential_group": "kraken",
-      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v2.2.0-ohlcv/kraken-v1.1.0.zip",
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.7.0-kraken/kraken-1.0.0.zip",
       "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/Kraken.png",
       "min_core_version": "2.0.0",
       "capabilities_summary": [
         "Auto Trading",
         "WebSocket",
         "Real-time",
-        "300+ Coins",
-        "Limit Order"
+        "300+ Coins"
       ],
-      "download_sha256": "97bd62c78aa0a0b568772be99af0951e0a32126639a47e5943719750244e7c0a",
-      "sha256": "b9000b387ea9351063ad3e7ea613ce5d4cb3b2665bb2324042b6311defdcb05f"
+      "download_sha256": "504e6d2e9b876b41343421927ed78676f934c53f38add89ae2589c32be29d319"
     },
     {
       "id": "kraken_futures",
       "name": "Kraken Futures",
-      "version": "1.1.0",
+      "version": "1.0.0",
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "US",
@@ -750,22 +690,20 @@
       "bundled": false,
       "is_base": false,
       "credential_group": "kraken",
-      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v2.2.0-ohlcv/kraken_futures-v1.1.0.zip",
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.7.0-kraken/kraken_futures-1.0.0.zip",
       "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/Kraken.png",
       "min_core_version": "2.0.0",
       "capabilities_summary": [
         "Futures",
         "Leverage",
-        "Sandbox",
-        "Limit Order"
+        "Sandbox"
       ],
-      "download_sha256": "1f861fa688ca509c9247ea41f3fe28382e4dd2413855f29d6486b390177e566c",
-      "sha256": "ada977b6031139049e7bf0b809b4334e57a6ef0cb2f9b70f1b9d73d1f11d1f78"
+      "download_sha256": "dbd9d113651e9233bc80b67413a275eb46b9d6cfcf4183aa9ed626ab2312300e"
     },
     {
       "id": "kraken_xstocks",
       "name": "Kraken xStocks",
-      "version": "1.1.0",
+      "version": "1.0.0",
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "US",
@@ -785,18 +723,16 @@
       "bundled": false,
       "is_base": false,
       "credential_group": "kraken",
-      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v2.2.0-ohlcv/kraken_xstocks-v1.1.0.zip",
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v1.7.0-kraken/kraken_xstocks-1.0.0.zip",
       "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/Kraken.png",
       "min_core_version": "2.0.0",
       "capabilities_summary": [
         "Tokenized Stocks",
         "Fractional Shares",
-        "24/5 Trading",
-        "Limit Order"
+        "24/5 Trading"
       ],
       "region_notice": "xStocks (tokenized equities) may not be available in all jurisdictions. Check Kraken's supported regions for xStocks trading at kraken.com before installing.",
-      "download_sha256": "0b0cff403c282568fd6a3fe3a99da8ce6c93678ac354be17add41caa3aecdffa",
-      "sha256": "d846429b7997bd935e98a473b656bd8f0933c202cebfb2f0a807b306d07be49f"
+      "download_sha256": "895f66f8c108d41076855a924f4e682a479f56d30f9cc4bb5410b1f9a95094b1"
     },
     {
       "id": "kraken_equities",
@@ -832,7 +768,7 @@
     {
       "id": "ibkr",
       "name": "Interactive Brokers",
-      "version": "1.1.0",
+      "version": "1.0.0",
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "GLOBAL",
@@ -853,7 +789,7 @@
       "bundled": false,
       "is_base": true,
       "credential_group": "ibkr",
-      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v2.2.0-ohlcv/ibkr-v1.1.0.zip",
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v2.0.1-store-rebuild/ibkr-v2.0.1.zip",
       "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/IBKR.png",
       "min_core_version": "1.0.0",
       "capabilities_summary": [
@@ -862,16 +798,14 @@
         "WebSocket",
         "Real-time",
         "150+ Markets",
-        "33 Countries",
-        "Limit Order"
+        "33 Countries"
       ],
-      "download_sha256": "1c397fc26f9f10887c3f583fb3fffbcaab2c6d455a2126ad212ae55902f1354f",
-      "sha256": "b34f1db650f48c27429e79d435df3986d32cb202ae1c2d3ec4594795c7b0823a"
+      "download_sha256": "ca86befe56e83abd440b15ac4f6a9ad05c326f08b58ebbc96294fde3954f58e3"
     },
     {
       "id": "ibkr_options",
       "name": "IBKR Options",
-      "version": "1.1.0",
+      "version": "1.0.0",
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "GLOBAL",
@@ -889,22 +823,20 @@
       "extends": "ibkr",
       "is_base": false,
       "credential_group": "ibkr",
-      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v2.2.0-ohlcv/ibkr_options-v1.1.0.zip",
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v2.0.1-store-rebuild/ibkr_options-v2.0.1.zip",
       "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/IBKR.png",
       "min_core_version": "1.0.0",
       "capabilities_summary": [
         "Options Chain",
         "Greeks",
-        "Options Trading",
-        "Limit Order"
+        "Options Trading"
       ],
-      "download_sha256": "1a1822102550a9e733abc91c58895a7cbe377b045a9a5587bac815aff9b2132d",
-      "sha256": "f3b90c3ada20e3ca741dc77fc99869211d906c43eac9527e8e1f8dcab258bd43"
+      "download_sha256": "e7cf2eb70828d31c1a324d2e906da6f207c093ae47a3a53d452050c05626e15c"
     },
     {
       "id": "ibkr_futures",
       "name": "IBKR Futures",
-      "version": "1.1.0",
+      "version": "1.0.0",
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "GLOBAL",
@@ -922,21 +854,19 @@
       "extends": "ibkr",
       "is_base": false,
       "credential_group": "ibkr",
-      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v2.2.0-ohlcv/ibkr_futures-v1.1.0.zip",
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v2.0.1-store-rebuild/ibkr_futures-v2.0.1.zip",
       "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/IBKR.png",
       "min_core_version": "1.0.0",
       "capabilities_summary": [
         "Futures Trading",
-        "Global Markets",
-        "Limit Order"
+        "Global Markets"
       ],
-      "download_sha256": "a108d500cc7f4a7ab82d93473e5cebdcd17aa3b37dd48657aa98d802cc0bb959",
-      "sha256": "5fc762ea5a02cb0bf60add8259b2d27d68f769b14215509ac4dedbf8ef6c6d1a"
+      "download_sha256": "092a6d176226ccd938b2179657d7ce572522f7e81ffd0af61fd1645c91a121d6"
     },
     {
       "id": "ibkr_forex",
       "name": "IBKR Forex",
-      "version": "1.1.0",
+      "version": "1.0.0",
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "GLOBAL",
@@ -954,21 +884,19 @@
       "extends": "ibkr",
       "is_base": false,
       "credential_group": "ibkr",
-      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v2.2.0-ohlcv/ibkr_forex-v1.1.0.zip",
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v2.0.1-store-rebuild/ibkr_forex-v2.0.1.zip",
       "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/IBKR.png",
       "min_core_version": "1.0.0",
       "capabilities_summary": [
         "Forex Trading",
-        "Currency Pairs",
-        "Limit Order"
+        "Currency Pairs"
       ],
-      "download_sha256": "55dc12c7791dadfe63d1bd39019c98a9fa53963585180811b620d999e7501405",
-      "sha256": "6ceb9ad5e058422fb818d229fd568eb8650a89217b6985a1ec619f496f99eccb"
+      "download_sha256": "e3eff532926339c11796999bbc045bc04b892afb8901dc2f7034c69356c248d6"
     },
     {
       "id": "ibkr_bonds",
       "name": "IBKR Bonds",
-      "version": "1.1.0",
+      "version": "1.0.0",
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "GLOBAL",
@@ -986,21 +914,19 @@
       "extends": "ibkr",
       "is_base": false,
       "credential_group": "ibkr",
-      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v2.2.0-ohlcv/ibkr_bonds-v1.1.0.zip",
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v2.0.1-store-rebuild/ibkr_bonds-v2.0.1.zip",
       "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/IBKR.png",
       "min_core_version": "1.0.0",
       "capabilities_summary": [
         "Bond Trading",
-        "Fixed Income",
-        "Limit Order"
+        "Fixed Income"
       ],
-      "download_sha256": "808f3f4a834fc858004131298356b362d953ab0bd938a761d064efdd6b059ae7",
-      "sha256": "17a5821005c1738b54d429edee3442ee48f5047964054bbdbc061cb65cc44d45"
+      "download_sha256": "a784c096422c3653060fd0575562768813216af6237478a28308f829b5c4284a"
     },
     {
       "id": "ibkr_events",
       "name": "IBKR Event Contracts",
-      "version": "1.1.0",
+      "version": "1.0.0",
       "vendor": "SandClaw Team",
       "plugin_type": "api",
       "region": "US",
@@ -1018,16 +944,14 @@
       "extends": "ibkr",
       "is_base": false,
       "credential_group": "ibkr",
-      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v2.2.0-ohlcv/ibkr_events-v1.1.0.zip",
+      "download_url": "https://github.com/kokogo100/sandclaw/releases/download/v2.0.1-store-rebuild/ibkr_events-v2.0.1.zip",
       "icon_url": "https://raw.githubusercontent.com/kokogo100/sandclaw/main/icons/IBKR.png",
       "min_core_version": "1.0.0",
       "capabilities_summary": [
         "Event Contracts",
-        "Prediction Market",
-        "Limit Order"
+        "Prediction Market"
       ],
-      "download_sha256": "d60b2c52c17465b1aa450c08c8f5e557d771ca90048494ea9cbd1b9f7a3c75e3",
-      "sha256": "d70792231d613b876e34d5f3d96d8061e155ff857681c24d389c9fe92ace4bd8"
+      "download_sha256": "d70b1f866ad8c6627efec650b01e832626783f89569ca70388adb09f38b08a07"
     }
   ]
 }
