@@ -7,23 +7,20 @@ Plugins listed here are automatically available in the SandClaw IDE **Settings >
 
 ---
 
-## Plugins (31)
+## Plugins (30)
 
 ### Bundled (included with IDE)
 
 | Plugin | Region | Asset Class | Features |
 |--------|--------|-------------|----------|
-| **Upbit** | KR | Crypto | WebSocket, Limit Order, 200+ KRW pairs |
-| **Alpaca** | US | Stock, Crypto | Paper Trading, Limit Order, Fractional Shares |
-| **Mock** | — | — | Test/development only |
-| **Kalshi** (Browser) | US | Prediction Market | CDP browser automation |
-| **Robinhood** (Browser) | US | Prediction Market | CDP browser automation |
-| **Web Search** | — | — | Market monitoring, no trading |
+| **Web Search** | — | — | DuckDuckGo market monitoring, no API key |
 
-### Store — Base Plugins (14)
+### Store — Base Plugins (18)
 
 | Plugin | Region | Asset Class | Auth | Features |
 |--------|--------|-------------|------|----------|
+| **Upbit** | KR | Crypto | API Key | 200+ KRW pairs, Limit Order |
+| **Alpaca** | US | Stock, Crypto | API Key | Paper Trading, Fractional Shares, Limit Order |
 | **LS Securities** | KR | Stock (KRX) | OAuth | 13 markets, WebSocket, Limit Order |
 | **KIS Securities** | KR | Stock (KRX) | API Key | WebSocket, Limit Order |
 | **Kraken** | Global | Crypto | HMAC-SHA512 | 300+ pairs, WebSocket, Limit Order |
@@ -33,11 +30,13 @@ Plugins listed here are automatically available in the SandClaw IDE **Settings >
 | **Zerodha** | IN | Stock (NSE/BSE) | API Key | WebSocket, Limit Order `*` |
 | **Upstox** | IN | Stock (NSE/BSE) | OAuth | WebSocket, Limit Order `*` |
 | **bitFlyer** | JP | Crypto | HMAC-SHA256 | WebSocket, Limit Order `*` |
-| **kabu STATION** | JP | Stock (TSE) | API Key | WebSocket, Limit Order `*` |
+| **kabu STATION** | JP | Stock (TSE) | API Key | WebSocket, Limit Order `*` (VIEW ONLY) |
+| **Kalshi** (Browser) | US | Prediction Market | Browser Login | CDP browser automation |
+| **Robinhood** (Browser) | US | Stock, Crypto, Events | Browser Login | CDP browser automation |
 | **Web Browsing CDP** | — | — | None | General browser automation skill |
-| **SBI Securities** | JP | Stock (TSE) | Browser | CDP automation (Phase 2) |
-| **Rakuten Securities** | JP | Stock (TSE) | Browser | CDP automation (Phase 2) |
-| **Kraken Equities** | — | — | — | Placeholder (not yet available) |
+| **SBI Securities** | JP | Stock (TSE) | Browser | CDP automation `*` |
+| **Rakuten Securities** | JP | Stock (TSE) | Browser | CDP automation `*` |
+| **Kraken Equities** | US | Stock, ETF | — | VIEW ONLY (API not yet available) |
 
 ### Store — Extension Plugins (11)
 
@@ -57,15 +56,15 @@ Extensions require their base plugin to be installed.
 | **IBKR Bonds** | Interactive Brokers | Fixed Income | Bond trading, Limit Order |
 | **IBKR Events** | Interactive Brokers | Event Contracts | Prediction market, Limit Order |
 
-> `*` **Community Testing**: 개발자가 해당 국가 거주자가 아니어서 실제 계좌로 테스트하지 못했습니다. API 문서 기반으로 구현되었으며, 사용 중 문제가 있으면 [GitHub Issues](https://github.com/kokogo100/sandclaw/issues)로 피드백 부탁드립니다.
+> `*` **Community Testing**: The developer does not reside in these countries and could not test with real accounts. These plugins are implemented based on official API documentation. If you encounter issues, please provide feedback via [GitHub Issues](https://github.com/kokogo100/sandclaw/issues).
 
 ### Coverage Summary
 
 | | Count |
 |---|---|
-| Total Plugins | 31 |
-| API Trading Plugins | 23 |
-| Limit Order Support | 23 |
+| Total Plugins | 30 |
+| API Trading Plugins | 22 |
+| Limit Order Support | 22 |
 | Regions | KR, US, JP, IN, Global |
 | Asset Classes | Stocks, Crypto, Futures, Options, Forex, Bonds, Prediction Markets |
 
