@@ -5,6 +5,8 @@
 > 📥 **[Download SandClaw IDE v0.9.0](https://github.com/kokogo100/sandclaw-releases/releases/download/v0.9.0/SandClaw_0.9.0_x64-setup.exe)** (Windows x64, 33MB) — [Release Notes](https://github.com/kokogo100/sandclaw-releases/releases/tag/v0.9.0)
 
 > ⚠️ **Windows SmartScreen**: On first run, Windows may show a warning. Click **"More info"** (추가 정보) → **"Run anyway"** (실행). This is normal for new apps without a paid code signing certificate. [Source code is open](https://github.com/kokogo100/sandclaw).
+>
+> 📊 **No built-in charts.** SandClaw is designed to work alongside your broker. Use your broker's charts for technical analysis. SandClaw handles AI strategy, automation, and execution.
 
 Public plugin registry for [SandClaw](https://sandclaw.io), an AI-powered trading IDE.
 Plugins listed here are automatically available in the SandClaw IDE **Settings > Store**.
