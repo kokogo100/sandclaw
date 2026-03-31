@@ -2,6 +2,8 @@
 
 > **Beta** — This registry is currently in beta. Feedback and bug reports are welcome via [GitHub Issues](https://github.com/kokogo100/sandclaw/issues).
 
+> 📥 **[Download SandClaw IDE v0.9.0](https://github.com/kokogo100/sandclaw-releases/releases/download/v0.9.0/SandClaw_0.9.0_x64-setup.exe)** (Windows x64, 33MB) — [Release Notes](https://github.com/kokogo100/sandclaw-releases/releases/tag/v0.9.0)
+
 Public plugin registry for [SandClaw](https://sandclaw.io), an AI-powered trading IDE.
 Plugins listed here are automatically available in the SandClaw IDE **Settings > Store**.
 
