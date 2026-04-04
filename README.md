@@ -2,7 +2,7 @@
 
 > **Beta** — This registry is currently in beta. Feedback and bug reports are welcome via [GitHub Issues](https://github.com/kokogo100/sandclaw/issues).
 
-> 📥 **[Download SandClaw IDE v0.9.0](https://github.com/kokogo100/sandclaw-releases/releases/download/v0.9.0/SandClaw_0.9.0_x64-setup.exe)** (Windows x64, 33MB) — [Release Notes](https://github.com/kokogo100/sandclaw-releases/releases/tag/v0.9.0)
+> 📥 **[Download SandClaw IDE v0.9.1](https://github.com/kokogo100/sandclaw-releases/releases/download/v0.9.1/SandClaw_0.9.1_x64-setup.exe)** (Windows x64, 33MB) — [Release Notes](https://github.com/kokogo100/sandclaw-releases/releases/tag/v0.9.1)
 
 > ⚠️ **Windows SmartScreen**: On first run, Windows may show a warning. Click **"More info"** (추가 정보) → **"Run anyway"** (실행). This is normal for new apps without a paid code signing certificate. [Source code is open](https://github.com/kokogo100/sandclaw).
 >
