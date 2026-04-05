@@ -9,12 +9,12 @@
 > 📊 **No built-in charts.** SandClaw is designed to work alongside your broker. Use your broker's charts for technical analysis. SandClaw handles AI strategy, automation, and execution.
 
 > [!CAUTION]
-> **v0.9.0 Users — Manual Update Required**
+> **v0.9.0 Users = Manual Update Required**
 >
 > v0.9.0 had a JWT key renewal issue. We released v0.9.1 to fix it, but discovered that **auto-update does not work from v0.9.0**.
 > v0.9.0 users must manually download and install v0.9.1 by overwriting the existing installation for future updates to work.
 >
-> ⛔ **Do NOT fully uninstall SandClaw — this will permanently delete your L4 Memory Keys. Always install by overwriting (run the installer without uninstalling first).**
+> ⛔ **Do NOT fully uninstall SandClaw. This will permanently delete your L4 Memory Keys. Always install by overwriting (run the installer without uninstalling first).**
 
 Public plugin registry for [SandClaw](https://sandclaw.io), an AI-powered trading IDE.
 Plugins listed here are automatically available in the SandClaw IDE **Settings > Store**.
